@@ -1,0 +1,137 @@
+\documentclass[fleqn]{article}
+\oddsidemargin 0.0in
+\textwidth 6.0in
+\thispagestyle{empty}
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\definecolor{hwColor}{HTML}{AD53BA}
+
+\begin{document}
+
+  \begin{titlepage}
+
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+    \center
+
+
+
+    \textsc{\LARGE Arizona State University}\\[1.5cm]
+
+    \textsc{\LARGE Classical Parts/Field/Matter I }\\[1.5cm]
+
+
+    \begin{figure}
+      \includegraphics[width=\linewidth]{asu.png}
+    \end{figure}
+
+
+    \HRule \\[0.4cm]
+    { \huge \bfseries Homework One}\\[0.4cm] 
+    \HRule \\[1.5cm]
+
+    \textbf{Behnam Amiri}
+
+    \bigbreak
+
+    \textbf{Prof: Maulik Parikh}
+
+    \bigbreak
+
+
+    \textbf{{\large \today}\\[2cm]}
+
+    \vfill
+
+  \end{titlepage}
+
+  \begin{enumerate}
+    \item \textbf{Mass and weight}
+    \begin{enumerate}
+      \item Consider a particle of mass m and electric charge q, subject to an electric field E. What is its acceleration, a?
+
+      \textcolor{hwColor}{
+        The actual force on a particle with charge $q$ is given by $F_e=qE$, then to find the acceleration of the particle
+        we can use the following formula: \\
+        \\
+        $
+          \overrightarrow{F}=m\overrightarrow{a} \rightarrow \overrightarrow{a}=\dfrac{F_e}{m}=\dfrac{q\overrightarrow{E}}{m}
+        $
+      }
+
+      \item Consider pushing one side of a cube-shaped block of mass m (with sides of area A) by applying a uniform pressure p (ignore friction).
+      What is the block’s acceleration, a?
+      \item Now consider a particle of mass m in a gravitational field g. What is its acceleration? What is unusual about acceleration due to
+      gravity, compared with your earlier answers? (Einstein used this observation as a starting point for his theory of gravity.)
+    \end{enumerate}
+    
+    \item \textbf{Newton’s first law (or why you should wear a seat belt in the backseat)}
+    \begin{enumerate}
+      \item Write down a formula for the average deceleration if a body moving initially at speed $v_0$ comes to a halt within a distance x.
+      \item Suppose a car going at 45 mph comes to an abrupt halt (crashes into a wall, say). If a passenger in the back is not wearing a seat
+      belt, they will go flying into the front seat at the original speed $v_0$ (Newton’s first law) and then come to a halt with the front
+      seat of the car. Suppose because of crumpling of the car that the front seat comes to a halt within 50 cm. What is the deceleration
+      (expressed in g’s) of the passenger in the back seat?
+
+      \item The main effect of a seat belt is to provide additional distance
+      over which deceleration takes place, so that the passenger is decelerating even while hurtling towards the front seat. If the front
+      seat is 80 cm away from the passenger (and assuming again a 50 cm stopping distance for the front seat) calculate the passenger’s
+      deceleration in g’s again.
+
+      It is the deceleration, not the substance with which you have an impact,
+      that kills you (which is why jumping into water from a great height can
+      be fatal). Your own internal organs are also subject to Newton’s first
+      law, of course. A large acceleration or deceleration can overcome the
+      tension of the connective tisues binding internal organs to each other...
+      you can imagine the rest. Note also from the first part of the question
+      that deceleration goes quadratically with speed. Remember all this
+      while driving!
+      For more on the perils of deceleration, see S. Cooper in
+      https://www.youtube.com/watch?v=hTujOtTqSsQ
+
+    \end{enumerate}
+
+    \item Consider a closed system of three particles. (Assume the particles
+    lie on a straight line, for simplicity.) Suppose that the potential energy of the system depends only on the separation of the particles i.e.
+    $V(x_1, x_2, x_3)=V(x_1-x_2, x_1-x_3, x_2-x_3)$.
+    \begin{enumerate}
+      \item  As an example, write down the potential energy if the three particles are interacting gravitationally (e.g. Earth-Moon-Sun), and
+      check that it takes the form above.
+      \item Prove that Newton’s third law holds for the system. Remember
+      that the force on the ith particle is $-\dfrac{\partial }{\partial x_i}V$
+
+      \item Show that the total momentum of the system is conserved.
+    \end{enumerate}
+
+    \item A ball is thrown straight up at speed $v_0$ in the presence of gravity.
+    \begin{enumerate}
+      \item Ignoring air resistance at first, what is the maximum height the
+      ball reaches?
+      \item Now include Newtonian (quadratic) air resistance, with drag coefficient c. Letting the $\hat{y}$ direction point upwards, write down the
+      equation of motion (be careful with the signs).
+
+      \item Solve the equation of motion to find $v(t)=(\dot{y(t)})$. Remember to check that $v(0) = v_0$.
+
+      \item Without integrating anything yet, calculate the time at which the ball reaches its maximum height.
+
+      \item Find the formula y(t).(Note that $\dfrac{d}{dx}ln cos(x)=-tan(x)$)
+
+      \item For a baseball thrown upwards at 45 mph (roughly 20 m/s), with g roughly 10 m/s2
+      , mass m = 0.14kg, and drag coefficient $c=1.4 × 10^{-3}Ns^2/m^2$
+      , calculate the height reached by the ball with and without air resistance.
+      
+    \end{enumerate}
+
+    \item  A proton of mass m and charge q is in both a uniform electric field,
+    $\overrightarrow{E}=E\hat{y}$ and a uniform magnetic field $\overrightarrow{B}=B\hat{y}$. Write down the three
+    Cartesian components of the Lorentz force law and solve for the motion of the proton.
+
+  \end{enumerate}
+
+\end{document}
