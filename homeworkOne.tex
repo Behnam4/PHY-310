@@ -150,7 +150,7 @@
       \textcolor{hwColor}{
         $F$ in the definition of potential energy is the force exerted by the force field, e.g., gravity, spring force, etc. 
         The potential energy U is equal to the work you must do against that force to move an object from the $U=0$ reference point to the position $r$.
-        The force you must exert to move it must be equal but oppositely directed, and that is why the below formula has a negtive in front of it. \\
+        The force you must exert to move it must be equal but oppositely directed, and that is why the below formula has a negative in front of it. \\
         \\
         $
           V=-\bigints_{ref}^{x} \overrightarrow{F} dx \Rightarrow \overrightarrow{F(x)}=\dfrac{dV}{dx} \\ \\
@@ -190,7 +190,6 @@
         $
       }
 
-
       \textcolor{hwColor}{
         $
           \Longrightarrow \begin{cases}
@@ -208,6 +207,29 @@
 
 
       \item Show that the total momentum of the system is conserved.
+      
+        \textcolor{hwColor}{
+          We know that $m$ is constant, hence: \\
+          $
+            \overrightarrow{P}\equiv m\overrightarrow{V} \\ \\
+            \overrightarrow{F}=\dfrac{d\overrightarrow{P}}{dt}=\dfrac{m\overrightarrow{V}}{dt}=m\dfrac{\overrightarrow{V}}{dt}+\overrightarrow{V}\dfrac{m}{dt} \rightarrow \overrightarrow{F}=m\dfrac{\overrightarrow{V}}{dt} \\ \\
+          $
+          Now that we proved $\overrightarrow{F}=\dfrac{d\overrightarrow{P}}{dt}$, let's find the totoal momentum of the system. \\
+          The totoal force acting on the system consists of the sum of all the internal and external forces. Since, we consider this system
+          a closed one then we can assume the external force is zero. \\
+          \\
+          $
+            \overrightarrow{F_{Total}}=\overrightarrow{F_{Internal}}+\overrightarrow{F_{External}}=\overrightarrow{F_{Internal}}+0 \\ \\
+          $
+          It is important to keep in mind that the total internal force is zero because all the internal forces have the same magnitude but they have the opposite direction. 
+          Therefore, they all cancel out each other. Hence, we are safe to say, the totoal force of the system is zero. \\
+          $
+            \dfrac{\overrightarrow{P_{Total}}}{dt}=\overrightarrow{F_{Total}}=0 \Rightarrow \overrightarrow{P_{Total}}=Constant 
+          $ \\
+          \\
+          Hence, the momentum of the system is conserved.
+        }
+
     \end{enumerate}
 
     \item A ball is thrown straight up at speed $v_0$ in the presence of gravity.
