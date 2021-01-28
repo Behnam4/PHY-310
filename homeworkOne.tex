@@ -5,6 +5,7 @@
 \usepackage{import}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{bigints} 
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{float}
@@ -125,8 +126,8 @@
       check that it takes the form above.
 
       \textcolor{hwColor}{
-        Potential energy $(U)$ of gravity between two objects: $U=G\dfrac{m_1 ~ m_2}{r}$. For example 
-        the potential energy between Earth-Moon-Sun is as the followingL: \\
+        Potential energy $(V)$ of gravity between two objects: $V=G\dfrac{m_1 ~ m_2}{r}$. For example 
+        the potential energy between Earth-Moon-Sun is as the following: \\
         \\
         $
           \begin{cases}
@@ -135,16 +136,76 @@
             E \rightarrow Earth \\
           \end{cases} \\
           \\
-          U_{total}=U_{SM}+U_{EM}+U_{ES} \\
+          V_{total}=V_{SM}+V_{EM}+V_{ES} \\
           \\
-          =G\dfrac{m_S ~ m_M}{r_S-r_M}+G\dfrac{m_E ~ m_M}{r_E-r_M}+G\dfrac{m_E ~ m_S}{r_E-r_S}=G\left(\dfrac{m_S ~ m_M}{r_S-r_M}+\dfrac{m_E ~ m_M}{r_E-r_M}+\dfrac{m_E ~ m_S}{r_E-r_S}\right) \\
+          =G\dfrac{m_S ~ m_M}{x_S-x_M}+G\dfrac{m_E ~ m_M}{x_E-x_M}+G\dfrac{m_E ~ m_S}{x_E-x_S}=G\left(\dfrac{m_S ~ m_M}{x_S-x_M}+\dfrac{m_E ~ m_M}{x_E-x_M}+\dfrac{m_E ~ m_S}{x_E-x_S}\right) \\
           \\
-          U_{total}(r_S, r_M, r_E)=U(r_S-r_M, r_E-r_M, r_E-r_S)
+          V_{total}(x_S, x_M, x_E)=V(x_S-x_M, x_E-x_M, x_E-x_S)
         $
       }
 
       \item Prove that Newton’s third law holds for the system. Remember
       that the force on the ith particle is $-\dfrac{\partial }{\partial x_i}V$
+
+      \textcolor{hwColor}{
+        $F$ in the definition of potential energy is the force exerted by the force field, e.g., gravity, spring force, etc. 
+        The potential energy U is equal to the work you must do against that force to move an object from the $U=0$ reference point to the position $r$.
+        The force you must exert to move it must be equal but oppositely directed, and that is why the below formula has a negtive in front of it. \\
+        \\
+        $
+          V=-\bigints_{ref}^{x} \overrightarrow{F} dx \Rightarrow \overrightarrow{F(x)}=\dfrac{dV}{dx} \\ \\
+        $
+        Let's calculate the force between Earth and Sun. \\
+        \\
+        $
+          \overrightarrow{F_{ES}}=-\overrightarrow{\nabla}V_{ES}=-\dfrac{\partial}{\partial x}\left(G\dfrac{m_E ~ m_S}{x_E-x_S}\right)=-G(m_E ~ m_S)\dfrac{0-1}{(x_E-x_S)^2} ~ \hat{x} \\
+          \\
+          \overrightarrow{F_{ES}}=G\dfrac{m_E ~ m_S}{(x_E-x_S)^2} ~ \hat{x} \\
+        $
+      }
+
+      \textcolor{hwColor}{
+        \rule{15cm}{1pt}
+      }
+
+      \textcolor{hwColor}{
+        Now the force between Sun and Moon. \\ \\
+        $
+          \overrightarrow{F_{SM}}=-\overrightarrow{\nabla}V_{SM}=-\dfrac{\partial}{\partial x}\left(G\dfrac{m_S ~ m_M}{x_S-x_M}\right)=-G(m_S ~ m_M)\dfrac{0-1}{(x_S-x_M)^2} ~ \hat{x} \\
+          \\
+          \overrightarrow{F_{SM}}=G\dfrac{m_S ~ m_M}{(x_S-x_M)^2} ~ \hat{x} \\
+        $
+      }
+
+      \textcolor{hwColor}{
+        \rule{15cm}{1pt}
+      }
+
+      \textcolor{hwColor}{
+        Lastly, the force between Earth and Moon. \\ \\
+        $
+          \overrightarrow{F_{EM}}=-\overrightarrow{\nabla}V_{EM}=-\dfrac{\partial}{\partial x}\left(G\dfrac{m_E ~ m_M}{x_E-x_M}\right)=-G(m_E ~ m_M)\dfrac{0-1}{(x_E-x_M)^2} ~ \hat{x} \\
+          \\
+          \overrightarrow{F_{EM}}=G\dfrac{m_E ~ m_M}{(x_E-x_M)^2} ~ \hat{x} \\
+        $
+      }
+
+
+      \textcolor{hwColor}{
+        $
+          \Longrightarrow \begin{cases}
+            \overrightarrow{F_{ES}}=-\overrightarrow{F_{SE}} \\
+            \\
+            \overrightarrow{F_{SM}}=-\overrightarrow{F_{MS}} \\
+            \\
+            \overrightarrow{F_{EM}}=-\overrightarrow{F_{ME}} \\
+          \end{cases}
+        $
+        \\
+        \\
+        Therefore, Newton’s third law holds for the system.
+      }
+
 
       \item Show that the total momentum of the system is conserved.
     \end{enumerate}
