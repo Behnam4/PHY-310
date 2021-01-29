@@ -234,12 +234,58 @@
 
     \item A ball is thrown straight up at speed $v_0$ in the presence of gravity.
     \begin{enumerate}
-      \item Ignoring air resistance at first, what is the maximum height the
-      ball reaches?
+      \item Ignoring air resistance at first, what is the maximum height the ball reaches?
+
+        \textcolor{hwColor}{
+          The final velocity when the ball reaches the maximum height is zero ($V^2_{fy}=0$). We can use one of the kinetic equations
+          to find the $\Delta y$. \\
+          \\
+          $
+            V^2_{fy}=V^2_{0y}+2g\Delta y \rightarrow 0=V^2_{0y}+2g\Delta y \\ \\
+            \Delta y=\dfrac{-V^2_{0y}}{2g}
+          $, the maximum height the ball reaches. (Remember $g=-a$)
+        }
+
       \item Now include Newtonian (quadratic) air resistance, with drag coefficient c. Letting the $\hat{y}$ direction point upwards, write down the
       equation of motion (be careful with the signs).
 
+        \textcolor{hwColor}{
+          $
+            m{a_y}=-mg+cv^2_{y}
+          $
+        }
+
       \item Solve the equation of motion to find $v(t)=(\dot{y(t)})$. Remember to check that $v(0) = v_0$.
+
+        \textcolor{hwColor}{
+          $
+            m{a_y}=-mg+cv^2_{y} \Rightarrow a_y=-g+(\dfrac{c}{m})v^2_{y} \\
+            \\
+            \dfrac{dv_y}{dt}=-g+(\dfrac{c}{m})v^2_{y} \\
+            \\
+            \bigints_{v_y(0)}^{v_y(t)}\dfrac{dv_y}{g-(\dfrac{c}{m})v^2}=-\bigints_{0}^{t} dt \Rightarrow \dfrac{1}{m}\bigints_{v_y(0)}^{v_y(t)}\dfrac{dv_y}{1-(\dfrac{c}{mg})v^2}=-\bigints_{0}^{t} dt \\
+            \\
+            u=\sqrt{\dfrac{c}{mg}}v, ~~~ du=\sqrt{\dfrac{c}{mg}}dv \\
+            \\
+            \\
+            \dfrac{1}{g}\sqrt{\dfrac{mg}{c}} \bigints_{u(0)}^{u(t)} \dfrac{du}{1-u^2}=-\bigints_{0}^{t} dt \\
+            \\
+            \\
+            \sqrt{\dfrac{m}{cg}}\left(tanh^{-1}(u(t)-tanh^{-1}(u(0)))\right)=-t \\
+            \\
+            \\
+            tanh^{-1}\left(\sqrt{\dfrac{c}{mg}}v(t)\right)-tanh^{-1}\left(\sqrt{\dfrac{c}{mg}}v(0)\right) \\
+            \\
+            \\
+            v(t)=\sqrt{\dfrac{mg}{c}} tanh\left[tanh^{-1}(\sqrt{\dfrac{c}{mg}}v(0))-\sqrt{\dfrac{c}{mg}}t\right] \\
+            \\
+            \\
+            t=0 \Rightarrow v(t)\sqrt{\dfrac{mg}{c}}tanh\left[tanh^{-1}(\sqrt{\dfrac{c}{mg}}v(0))\right] \\
+            \\
+            \\
+            =v(0)\sqrt{\dfrac{mg}{c}} \sqrt{\dfrac{c}{mg}} \Rightarrow v(t)=v(0)
+          $
+        }
 
       \item Without integrating anything yet, calculate the time at which the ball reaches its maximum height.
 
