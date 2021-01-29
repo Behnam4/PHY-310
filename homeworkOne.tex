@@ -289,12 +289,58 @@
 
       \item Without integrating anything yet, calculate the time at which the ball reaches its maximum height.
 
+        \textcolor{hwColor}{
+          When $v(t)=0$, then we have the maximum height. \\
+          \\
+          $
+            tanh^{-1}(0)=tanh^{-1}\left[\sqrt{\dfrac{c}{mg}v_0}\right]-\sqrt{\dfrac{cg}{m}}t \Rightarrow t_{max}=\sqrt{\dfrac{m}{cg}}tanh^{-1}\left[\sqrt{\dfrac{c}{mg} v_0}\right]
+          $
+        }
+
+      \pagebreak
+
       \item Find the formula y(t).(Note that $\dfrac{d}{dx}ln cos(x)=-tan(x)$)
+
+        \textcolor{hwColor}{
+          $
+            v(t)=\sqrt{\dfrac{mg}{c}} tanh\left[tanh^{-1}(\sqrt{\dfrac{c}{mg}}v_0-\sqrt{\dfrac{c}{mg}}t)\right] \\
+            \\
+            \\
+            \dfrac{dy}{dt}=\sqrt{\dfrac{mg}{c}} tanh\left[tanh^{-1}(\sqrt{\dfrac{c}{mg}}v_0-\sqrt{\dfrac{c}{mg}}t)\right] \\
+            \\
+            \\
+            \bigints_{0}^{y} dy=\bigints_{0}^{t} \sqrt{\dfrac{mg}{c}} tanh\left[tanh^{-1}(\sqrt{\dfrac{c}{mg}}v_0-\sqrt{\dfrac{c}{mg}}t)\right] dt \\
+            \\
+            \\
+            u=tanh^{-1}(\sqrt{\dfrac{c}{mg}}v_0-\sqrt{\dfrac{c}{mg}}t) \Rightarrow dv=\left(tanh^{-1}\left[\sqrt{\dfrac{c}{mg}}v_0\right]-\sqrt{\dfrac{c}{mg}}\right)dt \\
+            \\
+            \\
+            \Rightarrow y(t)=\dfrac{\sqrt{mg} ~ ln(cosh\left(tanh^{-1}(\sqrt{\dfrac{c}{mg}}v_0)-\sqrt{\dfrac{c}{mg}}t\right))}{\sqrt{c} ~ tanh^{-1}(\sqrt{\dfrac{c}{mg}}v_0)}
+          $
+        }
 
       \item For a baseball thrown upwards at 45 mph (roughly 20 m/s), with g roughly 10 m/s2
       , mass m = 0.14kg, and drag coefficient $c=1.4 × 10^{-3}Ns^2/m^2$
       , calculate the height reached by the ball with and without air resistance.
+
+        \textcolor{hwColor}{
+          With air resistance: \\ \\
+          $
+            \dfrac{0.14 ~ kg}{2 \times 1.4 × 10^{-3}Ns^2/m^2} ln \left[\dfrac{1.4 × 10^{-3}Ns^2/m^2 \times 20 m/s}{0.14 ~ kg \times 10 m/s^2}\right]+1 \approx 17 m
+          $
+        }
+
+        \textcolor{hwColor}{
+          \rule{15cm}{1pt}
+        }
       
+        \textcolor{hwColor}{
+          Without air resistance: \\ \\
+          $
+            \dfrac{20^2}{2 \times 10 m/s^2}=20 ~ m
+          $
+        }
+
     \end{enumerate}
 
     \item  A proton of mass m and charge q is in both a uniform electric field,
