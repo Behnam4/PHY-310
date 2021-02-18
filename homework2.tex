@@ -58,6 +58,41 @@
     way back down, then moved horizontally back to its starting point. Calculate the work done on the block on each of the four segments of
     its quadrilateral path.
 
+      \textcolor{hwColor}{
+        The work done by the force \textbf{F} in the displacement $d\mathbf{r}$ is $\bigints \overrightarrow{\mathbf{F}}.\overrightarrow{d\mathbf{r}}$.
+        This is a line integral which mathematically adds up the areas and gives area under a surface but only over the specified curve. \\
+        \\
+        Let's define four points that show where the block travels. \\
+        Because of the gravity of Earth, the block of mass $m$ experiecnes a vector force $\overrightarrow{\mathbf{F}}=<0, mg>$. \\ \\
+        $
+          \begin{cases}
+            B=(0,1) & C=(1,1) \\
+            A=(0,0) & D=(1,0)  
+          \end{cases} \\
+          \\
+          \\
+          W=\bigints_{\mathbb{C}} \overrightarrow{\mathbf{F}}.\overrightarrow{d\mathbf{r}}=\bigints_{AB} \overrightarrow{\mathbf{F}}.\overrightarrow{d\mathbf{r}}+\bigints_{BC} \overrightarrow{\mathbf{F}}.\overrightarrow{d\mathbf{r}}+\bigints_{CD} \overrightarrow{\mathbf{F}}.\overrightarrow{d\mathbf{r}}+\bigints_{DA} \overrightarrow{\mathbf{F}}.\overrightarrow{d\mathbf{r}} \\
+          \\
+          \\
+          W=\bigints_{AB} <0, mg>.<0,dy>+\bigints_{BC} <0, mg>.<dx,0>  \\              
+          +\bigints_{CD} <0, mg>.<0,dy>+\bigints_{DA} <0, mg>.<dx,0> \\
+          \\
+          \\
+          W=\bigints_{0}^{h} mgdy+\bigints_{0}^{h} -mgdy=mgh-mgh \\
+          \\
+          \therefore W=0 \\
+          \\
+          \Longrightarrow \begin{cases}
+            W_{AB}=mgh \\
+            \\
+            W_{BC}=0 \\
+            \\
+            W_{CD}=-mgh \\
+            \\
+            W_{DA}=0
+          \end{cases}
+        $ 
+      }
 
     \item A cat of mass $m$ jumps onto the outside edge of a slowly spinning ceiling fan. The fan has radius $R$, moment of inertia $I$, and initial
     angular velocity $\omega_0$. What is its new angular velocity?
