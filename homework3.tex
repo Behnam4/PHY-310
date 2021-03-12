@@ -101,6 +101,38 @@
     assume $\theta_0 < \pi$ and $z_0 >0$). Use the Euler-Lagrange equations to find
     the shortest path between those two points on the cylinder.
 
+      \textcolor{hwColor}{
+        A very tiny section of the path $ds$ is: \\
+        \\
+        $
+          ds=\sqrt{d\rho^2+\rho^2 d\theta^2+dz^2}=\sqrt{R^2 d\theta^2+dz^2}=dz \sqrt{R^2 \left(\dfrac{d\theta^2}{dz^2}+1\right)}=\sqrt{(R\theta^')^2+1}dz \\
+          \\
+          \\
+          \therefore ~~~ \mathcal{L} \left[\theta(z)\right]=\bigints_{p_1}^{p_2}ds=\bigints_{p_1}^{p_2}\sqrt{(R\theta^')^2+1}dz \Longrightarrow f=\sqrt{(R\theta^')^2+1} \\
+          \\
+          \\
+          \dfrac{\partial f}{\partial \theta^'}=\dfrac{R^2 \theta^'}{\sqrt{(R\theta^')^2+1}} \\
+          \\
+          \\
+        $
+        The Euler lagrange equation allows us: \\
+        \\
+        $
+          \dfrac{d}{dz} \dfrac{R^2 \theta^'}{\sqrt{(R\theta^')^2+1}}=0 \Longrightarrow (\theta^')^2=\dfrac{C^2}{R^2 \left[R^2-c^2\right]} \\
+          \\
+          \theta(z)=\sqrt{\left(\dfrac{C^2}{R^2(R^2-C^2)}\right)}z+b=C_1z+b \\ \\
+          \\
+          \begin{cases}
+            \theta=0 \Rightarrow z=0 \Longrightarrow b=0 \\
+            \\
+            \theta_0 \Rightarrow z=z_0 \Longrightarrow C_1=\dfrac{\theta_0}{z_0}z 
+          \end{cases} \\ \\
+        $
+        Note: the shortest path on the surface of a cylinder between $(0,0)$ and $(\theta_0, z_0)$.
+      }
+
+    \pagebreak
+
     \item We’ve seen that harmonic oscillator solutions can be expressed as: 
     $$
     x(t)=C_1 e^{i\omega t}+C_2 e^{-i \omega t} \\
@@ -109,25 +141,51 @@
     =Re\{\tilde{A} \}
     $$
 
-    \textcolor{hwColor}{
-      $
-        x(t)=C_1 e^{i\omega t}+C_2 e^{-i \omega t}=C_1 \left[\right]+C_2 \left[\right]
-      $
-    }
-
     Determine how the coefficients in every line can be expressed in terms
     of those of the following line (expressing the last line in terms of the
     coefficients in the first line).
 
+    \includegraphics[height=5cm, width=9cm]{one.jpg} 
+
+    \includegraphics[height=5cm, width=9cm]{two.jpg} 
+
+    \includegraphics[height=5cm, width=9cm]{three.jpg} 
+
+
+    \pagebreak
+  
     \item You are driving a car on a road with bumps every $30 ~ m$. If the car’s
     suspension has a resonant frequency of $0.5 ~ Hz$, at what speed would
     you have to drive in order to experience violent shaking of the car?
+
+      \textcolor{hwColor}{
+        In order to experience violent shaking, $\omega=\omega_0$ \\
+        \\
+        $
+          \omega_0=\dfrac{1}{2} ~ Hz=\dfrac{v}{d}=\dfrac{v}{30} \\
+          \\
+          \therefore ~~~ v=15 ~ m/s ~~~~ \surd
+        $
+      }
 
 
     \item A block of mass $m$ sliding horizontally on a frictionless table at velocity
     v strikes a spring of spring constant $k$. The block compresses the spring
     and then bounces back with opposite velocity. How long is the mass in
     contact with the spring? Find the maximum compression of the spring.
+
+    \textcolor{hwColor}{
+      The natural frequency of the system is $\omega_0=\sqrt{\dfrac{k}{m}}$ and the period of it is
+      $2\pi \sqrt{\dfrac{m}{k}}$  \\
+      \\
+      Contact with the spring: $\pi\sqrt{\dfrac{m}{}k}$ \\
+      \\
+      \\
+      $
+        \dfrac{1}{2}mv^2=\dfrac{1}{2}kx^2 \Longrightarrow x=v\sqrt{\dfrac{m}{k}} \\ \\
+      $
+      Hence, contact with the spring $t_s=\pi\sqrt{\dfrac{m}{k}}$ and the maximum compression of the spring $x_c=v\sqrt{\dfrac{m}{k}}$ 
+    }
 
 
     \item A pair of masses, $m$, with positions $x_1$ and $x_2$ are connected by a spring
@@ -290,6 +348,8 @@
         Therefore, Kinetic Energy$=\dfrac{1}{2} m \dot{x}^2 ~~~ \surd$
       }
 
+    \pagebreak
+
     \item A bead of mass $m$ slides frictionlessly on a circle of wire with radius R.
     The circle stands up in a vertical plane and rotates about the z-axis
     with constant angular velocity $\omega$. Write down the Lagrangian. Find
@@ -298,7 +358,69 @@
     about some stable equilibrium point $\theta_0$. Find $\omega_c$ and $\theta_0(\omega)$.
 
       \textcolor{hwColor}{
-         Salam 
+        \includegraphics[height=8cm, width=9cm]{m.jpg}  \\
+        \\
+        \\
+        $
+          \mathcal{L}=(\theta, \dot{\theta})=T-U=\dfrac{1}{2} \left(R^2 \dot{\theta}^2+(\omega R sin(\theta))^2\right)-mgh \\
+          \\
+          =\dfrac{1}{2} mR^2 \left(\dot{\theta}^2 R^2+\omega^2 sin^2(\theta) \right)-mgR(1-cos(\theta)) \\
+          \\
+          \\
+          \dfrac{\partial \mathcal{L}}{\partial \theta}=\omega^2 m R^2 sin(\theta) cos(\theta)-mg sin(\theta) \\
+          \\
+          \\
+          \dfrac{\partial \mathcal{L}}{\partial \dot{\theta}}=mR^2 \ddot{\theta} \\ \\
+        $
+        Now the equation for motion: \\
+        \\
+        $
+          \dfrac{\partial \mathcal{L}}{\partial \theta}=\dfrac{d}{dt} \dfrac{\partial \mathcal{L}}{\partial \dot{\theta}} \Rightarrow \omega^2 m R^2 sin(\theta) cos(\theta)-mgR sin(\theta)=mR^2 \ddot{\theta} \\
+          \\
+          \therefore \ddot{\theta}=\left(\omega^2 cos(\theta)-\dfrac{g}{R}\right)sin(\theta) ~~~ \surd \\
+          \\
+          \\
+        $
+        The bead is in equilibrium when $\dot{\theta}=\ddot{\theta}=0$. We have two cases to consider now: \\
+        \\
+        \\
+        $
+          \omega^2 cos(\theta)-\dfrac{g}{R}=0 \Longrightarrow -1\leqslant \dfrac{g}{\omega^2 R} \leqslant +1 \\
+          \\
+          \\
+          \therefore ~~~ \omega \geqslant \sqrt{\dfrac{g}{R}} \\
+          \\
+          \\
+        $
+        \\
+        \\
+        \\
+        \textbf{Case One:} \\
+        \\
+        $
+          \omega^2 \geqslant \dfrac{g}{R} \\
+          \\ 
+        $
+        For the equation of motion we have: \\
+        \\
+        $
+          \ddot{\theta}=\left(\omega^2 cos(\theta)-\dfrac{g}{R}\right) sin(\theta) \\
+          \\
+          \therefore ~~~ \dot{\delta}\left(\omega^2+\dfrac{g}{R}\right) \delta
+        $
+        \\
+        \\
+        \\
+        \textbf{Case Two:} \\
+        \\
+        $
+          \omega^2 < \dfrac{g}{R}
+        $
+        For this case equation of motion is zero only if $sin(\theta)=0$. The critical angular: \\
+        $
+          \omega_c=\sqrt{\dfrac{g}{R}}
+        $ and the angel when in the equilibrium points: $\theta_0=\pm cos^{-1} \left(\dfrac{g}{R \omega^2}\right)$ \\ \\
+        When $\omega^2<\dfrac{g}{R}$, we have a single e equilibrium point $\theta_0=0$.
       }
 
   \end{enumerate}
