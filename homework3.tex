@@ -197,22 +197,67 @@
     Write down the Lagrangian for a child of mass m going down the slide in terms of the variable $x(t)$.
 
 
-    \textcolor{hwColor}{
-      The Lagrangian for a child of mass $m$: \\
-      \\
-      $
-        \mathcal{L}(x, z, \dot{x}, \dot{z})=T-U=\dfrac{1}{2}m \left(\dot{x}^2+\dot{z}^2\right)-mgz=\dfrac{1}{2}m \left(\dot{x}^2+f^2_x \dot{x}^2\right)-mgz \\
+      \textcolor{hwColor}{
+        The Lagrangian for a child of mass $m$: \\
         \\
-        \\
-        \therefore ~~~ 
-      $The Lagrangian is: $m\left(\dfrac{1+f^2_x}{2}\right)\dot{x}^2-gf$
-    }
+        $
+          \mathcal{L}(x, z, \dot{x}, \dot{z})=T-U=\dfrac{1}{2}m \left(\dot{x}^2+\dot{z}^2\right)-mgz=\dfrac{1}{2}m \left(\dot{x}^2+f^2_x \dot{x}^2\right)-mgz \\
+          \\
+          \\
+          \therefore ~~~ 
+        $The Lagrangian is: $m\left[\left(\dfrac{1+f^2_x}{2}\right)\dot{x}^2-gf\right]$
+      }
 
 
-
-    
     \item  A particle of mass $m$ moving in three dimensions is subject to a potential energy function U(x, y). What is the Lagrangian? Which coordinate is cyclic? What momentum is conserved? If U(x, y) is a function
     only of the combination $x^2 + y^2$ , what other quantity is conserved?
+    
+      \textcolor{hwColor}{
+        $
+          \mathcal{L}(x, y, z, \dot{x}, \dot{y}, \dot{z})=T-U=\dfrac{1}{2}m\left(\dot{x}^2+\dot{y}^2+\dot{z}^2\right)-U(x,y) \\
+          \\
+          \\
+          \begin{cases}
+            \dfrac{\partial \mathcal{L}}{\partial x}=-\dfrac{\partial U}{\partial x} \\
+            \\
+            \\
+            \dfrac{\partial \mathcal{L}}{\partial y}=-\dfrac{\partial U}{\partial y} \\
+            \\
+            \\
+            \dfrac{\partial \mathcal{L}}{\partial z}=0 \\
+            \\
+            \\
+            \dfrac{\partial \mathcal{L}}{\partial \dot{x}}=m \dot{x} \\
+            \\
+            \\
+            \dfrac{\partial \mathcal{L}}{\partial \dot{y}}=m \dot{y} \\
+            \\
+            \\
+            \dfrac{\partial \mathcal{L}}{\partial \dot{z}}=m \dot{z}
+          \end{cases} \\ \\
+        $
+        When a parameter does not appear in r in the Lagrangian, then we can count it as cyclic. In this case $z$ is cyclic. Hence,
+        the z component of momentum is conserved. \\ 
+        \\
+        $
+        \mathcal{L}(r, \phi, z, \dot{r}, \dot{\phi}, \dot{z})=T-U=\dfrac{1}{2}m \left[\left(\dfrac{d}{dt}rcos(\phi)\right)^2+\left(\dfrac{d}{dt}rsin(\phi)\right)^2+\dot{z}^2\right]-U(r) \\
+        \\
+        =\dfrac{1}{2}m\left(\dot{r}^2+r^2 \dot{\phi}^2+\dot{z}^2\right)-U(r) \\
+        \\
+        \\
+        \begin{cases}
+          \dfrac{\partial \mathcal{L}}{\partial \phi}=0 \\
+          \\
+          \dfrac{\partial \mathcal{L}}{\partial \dot{\phi}}=mr^2 \dot{\phi}=p_{\phi} \\
+          \\
+          \dfrac{\partial \mathcal{L}}{\partial \phi}=\dfrac{d}{dt} \dfrac{\partial \mathcal{L}}{\partial \dot{\phi}} \\
+          \\
+          \dot{p}_{\phi}=0
+        \end{cases} \\
+        \\
+        \therefore ~~~ p_{\phi}=C
+        $, hence,  angular momentum is conserved.
+      }
 
     \item The Lagrangian for a relativistic free particle of rest mass m moving in
     one dimension is
