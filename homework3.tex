@@ -109,6 +109,12 @@
     =Re\{\tilde{A} \}
     $$
 
+    \textcolor{hwColor}{
+      $
+        x(t)=C_1 e^{i\omega t}+C_2 e^{-i \omega t}=C_1 \left[\right]+C_2 \left[\right]
+      $
+    }
+
     Determine how the coefficients in every line can be expressed in terms
     of those of the following line (expressing the last line in terms of the
     coefficients in the first line).
@@ -129,6 +135,63 @@
     force). Write down the Lagrangian. You can assume $x_2 ≥ x_1$. Find the
     equations of motion. Re-write the Lagrangian in terms of another set
     of generalized coordinates in which the equations are easier to solve.
+
+    \textcolor{hwColor}{
+      The Lagrangian from the potential energy of this system is as following: \\ \\
+      $
+        U=\dfrac{1}{2}k\left(-x_1+x_2-l_0\right) \\ \\
+        \mathcal{L}(x_1, x_2, \dot{x_1}, \dot{x_2})=\dfrac{1}{2} \left[m \left(\dot{x_1}^2+\dot{x_2}^2\right)-k\left(-x_1+x_2-l_0\right)^2\right] \\
+        \\
+        \\
+        \dfrac{\partial \mathcal{L}}{\partial x_1}=k\left(-x_1+x_2-l_0\right) \\
+        \\
+        \\
+        \dfrac{\partial \mathcal{L}}{\partial x_2}=k\left(x_1-x_2+l_0\right) \\
+        \\
+        \\
+        \dfrac{d}{dt} \left[\dfrac{\partial \mathcal{L}}{\partial \dot{x_1}}\right]=m\ddot{x_1} \\
+        \\
+        \\
+        \dfrac{d}{dt} \left[\dfrac{\partial \mathcal{L}}{\partial \dot{x_1}}\right]=m\ddot{x_2} 
+        \Longrightarrow \begin{cases}
+          m\ddot{x_1}=k(-x_1+x_2-l_0) \\
+          \\
+          m\ddot{x_2}=k(x_1-x_2+l_0)
+        \end{cases} \\ \\
+      $
+      Displacment: $-x_1+x_2-l_0$ and the center of the mass is $\dfrac{1}{2}\left(x_1+x_2\right)$. With these two
+      we should be able to find $x_1$ and $x_2$. \\
+      \\
+      \\
+      $
+        \begin{cases}
+          C=\dfrac{1}{2} (x_1+x_2) \\
+          \\
+          x=x_2-x_1-l_0
+        \end{cases} \Longrightarrow \begin{cases}
+          x_1=C-\dfrac{x-l_0}{2} \\
+          \\
+          x_2=C+\dfrac{x+l_0}{2}
+        \end{cases} \Longrightarrow \begin{cases}
+          \dot{x_1}=\dot{C}-\dfrac{\dot{x}}{2} \\
+          \\
+          \dot{x_2}=\dot{C}+\dfrac{\dot{x}}{2}
+        \end{cases} \\ \\ \\
+      $
+      Now, let's plugin these into the Lagrangian we calculated: \\
+      \\
+      $
+      \mathcal{L}(x_1, x_2, \dot{x_1}, \dot{x_2})=\dfrac{1}{2} \left[m \left(\dot{x_1}^2+\dot{x_2}^2\right)-k\left(-x_1+x_2-l_0\right)^2\right] \\
+      \\
+      =\dfrac{m}{2} \left[\left(\dot{C}-\dfrac{\dot{x}}{2}\right)^2+\left(\dot{C}+\dfrac{\dot{x}}{2}\right)^2\right]-\dfrac{kx^2}{2} \\
+      \\
+      \\
+      \\
+      \therefore ~~~ \mathcal{L}(x_1, x_2, \dot{x_1}, \dot{x_2})=m\dot{C}^2+\dfrac{m\dot{m}^2}{4}-\dfrac{kx^2}{2} ~~~ \surd \\
+      \\
+      \Longrightarrow \ddot{x}=-\dfrac{2kx}{m}
+      $
+    }
 
     \item The curve of a playground slide is defined by the function $z = f(x)$.
     Write down the Lagrangian for a child of mass m going down the slide
