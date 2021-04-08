@@ -206,9 +206,10 @@
         $
         \\
         \\
-        As we know the Earth is moving around the sun at a speed of nearly $30 ~ km/s$. We see that the Earth will leave the solar system because 
-        its new velocity is less than the old one. 
-        We found that $E$ is zero and because the Earth will leave the solar system the new orbit will be parabolic.
+        As we know the Earth is moving around the sun at a speed of nearly $30 ~ km/s$. We see that the Earth will leave 
+        the solar system because the escape velocity of earth is now the speed at which earth is traveling.
+        Earth did not change speed as its kinetic energy remained constant. Since the Earth will leave the solar 
+        system the new orbit will be parabolic.
       }
 
     \item A particle of mass $m$, subject to gravity, is constrained to move along
@@ -216,7 +217,56 @@
     is the vertical direction. Find Hamilton’s equations. 
 
       \textcolor{hwColor}{
-        Here
+        Cylindrical coordinate system: \\
+        \\
+        $
+          v=\dot{r} \hat{r}+r \dot{\theta} \hat{\theta}+\dot{z} \hat{z} \Longrightarrow v=b \dot{\theta} \hat{z}+r \dot{\theta} \hat{\theta} \\
+          \\
+          \\
+          \begin{cases}
+            PE=mgz \\
+            \\
+            KE=\dfrac{1}{2}m v^2=\dfrac{1}{2}m v.v=\dfrac{1}{2}m \left[(0, ~ r \dot{\theta}, ~ b \dot{\theta}).(0, ~ r \dot{\theta}, ~ b \dot{\theta})\right]
+            =\dfrac{1}{2}m \dot{\theta}^2 (r^2+b^2)
+          \end{cases}
+        $ \\
+        \\
+        \\
+        \\
+        The generalized momentum: \\
+        \\
+        $
+          p=\dfrac{\partial \mathcal{L}}{\partial \dot{\theta}}
+          =\dfrac{\partial \left[  \dfrac{1}{2}m(r^2+b^2) \dot{\theta}^2+mgb\theta\right]}{\partial \dot{\theta}} \\
+          \Longrightarrow \dot{\theta}=\dfrac{p_{\theta}}{m(r^2+b^2)}
+        $
+        \\
+        \\
+        Let's find the Hamiltonian: \\
+        \\
+        $
+          \mathcal{H}=p\dot{q}-\mathcal{L}=p^2_{\theta} \dot{\theta}-KE+PE \\
+          \\
+          \\
+          =\dfrac{p^2_{\theta}}{m(r^2+b^2)}-\dfrac{1}{2}m(r^2+b^2) \dot{\theta}^2+mgb\theta
+          =\dfrac{p^2_{\theta}}{m(r^2+b^2)}-\dfrac{1}{2}m(r^2+b^2) \left(\dfrac{p_{\theta}}{m(r^2+b^2)}\right)^2+mgb\theta \\
+          \\
+          \\
+          \\
+          \therefore ~~~ \mathcal{H}=mgb\theta+\dfrac{p^2_{\theta}}{2m(r^2+b^2)} ~~~~~ \surd \\
+          \\
+          \\
+          \begin{cases}
+            \dot{q}=\dot{\theta}=\dfrac{\partial \mathcal{H}}{\partial p_{\theta}}=\dfrac{\partial}{\partial p_{\theta}} \left[mgb\theta+\dfrac{p^2_{\theta}}{2m(r^2+b^2)}\right] \\
+            \\
+            \dot{p}=\dot{p}_{\theta}=-\dfrac{\partial \mathcal{H}}{\partial p_{\theta}}=-\dfrac{\partial}{\partial p_{\theta}} \left[mgb\theta+\dfrac{p^2_{\theta}}{2m(r^2+b^2)}\right]
+          \end{cases}
+          \Longrightarrow \begin{cases}
+            \dot{q}=\dot{\theta}=\dfrac{p_{\theta}}{m(r^2+b^2)} \\ 
+            \\
+            \dot{p}=\dot{p}_{\theta}=-mgb
+          \end{cases}
+        $ 
       }
 
     \item Using Cartesian coordinates, show that when $\epsilon > 1$, the equation
