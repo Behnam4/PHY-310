@@ -275,7 +275,51 @@
     Find $\alpha, \beta,$ and $\delta$ in terms of $c$ and $\epsilon$.
 
       \textcolor{hwColor}{
-        Here
+        We are told $\epsilon > 1$: \\
+        \\
+        \\
+        $
+          r(\phi)=\dfrac{c}{1+ \epsilon ~ cos(\phi)} \Rightarrow r(1+ \epsilon ~ cos(\phi))=1 \\
+          \\
+          \\
+        $
+        We know $x=r cos(\phi)$, hence:
+        $
+          r(1+ \epsilon ~ \dfrac{x}{r})=1, ~~~ k \equiv r+\epsilon ~ x
+        $
+        \\
+        \\
+        $
+          x^2+y^2=r^2=(k- \epsilon x)^2 \\
+          \\
+          x^2+y^2=k^2-2k \epsilon x+ \epsilon^2 x^2 \\
+          \\
+          x^2+y^2+2k \epsilon x- \epsilon^2 x^2=k^2 \\
+          \\
+          x^2(1- \epsilon^2)+y^2+2k \epsilon x=k^2 \\
+          \\
+          x^2(1- \epsilon^2)^2+y^2(1- \epsilon^2)+2k \epsilon x(1- \epsilon^2)=k^2(1- \epsilon^2) \\
+          \\
+          \\
+          \left[x(1-\epsilon^2)+ \epsilon k\right]^2-y^2|\epsilon^2-1|=k^2 \\
+          \\
+          \\
+          (1- \epsilon^2)^2 \left[x+\dfrac{\epsilon k}{(1- \epsilon^2)}\right]^2-y^2 |\epsilon^2-1|=k^2 \\
+          \\
+          \\
+          \\
+          \therefore ~~~~ \left[\dfrac{1-\epsilon^2}{k}\right]^2 \left[\dfrac{\epsilon k}{(1- \epsilon^2)^2}+x\right]^2-y^2 \left[\dfrac{|e^2-1|}{k^2}\right] \\
+          \\
+          \\
+          \\
+          \therefore ~~~ \begin{cases}
+            \alpha=\dfrac{k}{1-\epsilon^2} \\
+            \\
+            \beta=\dfrac{k}{\sqrt{|\epsilon^2-1|}} \\
+            \\
+            \delta=-\dfrac{\epsilon k}{(1- \epsilon^2)}
+          \end{cases}
+        $
       }
 
 
