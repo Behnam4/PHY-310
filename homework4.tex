@@ -91,7 +91,59 @@
     conserved during the motion? Why, or why not?
 
       \textcolor{hwColor}{
-        Hey
+        $
+          U(x)=-W=-\bigints\limits_{0}^{x} F(x^') dx^'=-\bigints\limits_{0}^{x} \dfrac{a e^{-bt}}{(x^')^2} dx^' \\
+          \\
+          \\
+          \therefore ~~~ U(x)=\dfrac{e^{-bt} a}{x} \\
+          \\
+          \\
+          \\
+          \mathcal{L}(x, \dot{x})=KE-PE=\dfrac{1}{2}m \dot{x}^2-\dfrac{e^{-bt} a}{x} ~~~ \surd \\
+          \\
+          \\
+          \dfrac{ \partial \mathcal{L}}{\partial x}=\dfrac{d}{dt} \dfrac{\partial \mathcal{L}}{\dot{x}}
+          \Longrightarrow 0-\left[-\dfrac{a e^{-bt}}{x^2}\right]=\dfrac{d}{dt}\left(m \dot{x}\right) 
+          \Longrightarrow \dfrac{a e^{-bt}}{x^2}=m\ddot{x} ~~~~ \surd
+        $
+        \\
+        \\
+        The Hamiltonian: \\
+        \\
+        $
+          \mathcal{H}=p\dot{q}-\mathcal{L}=p\dot{q}-\left(KE-PE\right) \\
+          \\
+          \\
+          =p_x \dot{x}-\dfrac{1}{2} m \dot{x}^2+\dfrac{a e^{-bt}}{x}=p_x (\dfrac{p_x}{m})-\dfrac{1}{2} m (\dfrac{p_x}{m})^2+\dfrac{a e^{-bt}}{x}
+          \\
+          \\
+          \\
+          \Longrightarrow \begin{cases}
+            \mathcal{H}=\dfrac{p^2_x}{2m}+\dfrac{a e^{-bt}}{x} \\
+            \\
+            \dot{p}_x=-\dfrac{\partial \mathcal{H}}{\partial x}=\dfrac{a e^{-bt}}{x^2} ~~~~~~~~~~~~~~~~~ \surd \\
+            \\
+            \dot{x}=\dfrac{\partial \mathcal{H}}{\partial p_x}=\dfrac{p_x}{m}
+          \end{cases} \\
+          \\
+          \\
+          \\
+          \begin{cases}
+            KE=\dfrac{1}{2}mv^2 \\
+            \\
+            dKE=m (v.\dot{v})=F.r \\
+            \\
+            PE=\dfrac{a e^{-bt}}{x} \\
+            \\
+            dPE=\dfrac{\partial PE}{\partial t} dt-F.r \\
+            \\
+            d(KE+PE)=\dfrac{\partial PE}{\partial t}dt
+          \end{cases}
+        $ \\
+        \\
+        \\
+        As we shown, the change in mechanical energy is not constant, hence the mechanical energy is not conserved.
+        The total energy though is conserved.  
       }
 
     \item Suppose that the sun’s mass suddenly decreases by half (of course that
