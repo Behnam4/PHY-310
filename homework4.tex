@@ -421,13 +421,51 @@
       Therefore, the solution $r=a cos(\phi)$ is a solution to the central force. 
     }
 
+    \pagebreak
 
     \item \begin{enumerate}
       \item Using the effective potential, show that for a force $\overrightarrow{F}=-\dfrac{a}{r} \hat{r}$,
       there are only bounded orbits, and find the radius of the circular orbit.
 
         \textcolor{hwColor}{
-          Here
+          $
+            \mathcal{L}(r, \phi, \dot{r}, \dot{\phi})=KE-PE=\dfrac{1}{2}m(\dot{r}^2+r^2 \dot{\phi}^2)-U(r) \\
+            \\
+            \\
+            \\
+            \dfrac{\partial \mathcal{L}}{\partial \phi}=\dfrac{d}{dt}\dfrac{\partial \mathcal{L}}{\partial \dot{\phi}} \\
+            \\
+            \\
+            0=\dfrac{d}{dt} mr^2 \dot{\phi} \\
+            \\
+            \therefore ~~~~ \dot{\phi}=\dfrac{l}{mr^2} \\
+            \\
+            \\
+            \dfrac{\partial \mathcal{L}}{\partial r}=\dfrac{d}{dt} \dfrac{\partial \mathcal{L}}{\partial \dot{r}} \\
+            \\
+            \\
+            mr \dot{\phi}^2-\dfrac{dU}{dr}=m \ddot{r}=\dfrac{l^2}{mr^3}-\dfrac{dU}{dr} \\
+            \\
+            \\
+            -\dfrac{d}{dr} \left[\dfrac{l^2}{mr^2}+U\right]=m \ddot{r} \\
+            \\
+            \\
+            \therefore ~~~ U_{ef}=\dfrac{l^2}{mr^2}+U(r) ~~~ \surd 
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            \dfrac{d}{dr} \left[\dfrac{l^2}{mr^2}+U(r)\right]=-2\dfrac{l^2}{mr^3}+\dfrac{dU(r)}{dr}=-2\dfrac{l^2}{mr^3}-F=-2\dfrac{l^2}{mr^3}+\dfrac{a}{r} \\
+            \\
+            \\
+            \\
+            \therefore ~~~ r=\dfrac{2 l^2}{am} ~~~ \surd
+          $
+          \\
+          \\
+          Based on what we found, the radius is constant, therefore the orbit has to be circular and since the total energy is negative, we can state that
+          the orbit is bounded. \\ \\
         }
 
       \item Use Kepler’s third law to calculate the altitude above the earth’s
@@ -437,7 +475,24 @@
       earth is $6 \times 10^{24} ~ kg$ and the radius is $6400 ~ km$.)
 
         \textcolor{hwColor}{
-          Here
+          $
+            T^2=\dfrac{4 \pi^2 ~ d^3}{G M_e} \\
+            \\
+            \\
+            d^3=\dfrac{86400^2 \times 6.67 \times 10^{-11} \times 6 \times 10^{24}}{4 \pi^2} \\
+            \\
+            \\
+            \therefore ~~~~ d=42306 ~ km  
+          $
+          \\
+          \\
+          \\
+          $d$ is the distance with respect to the center of mass, hence by subtracting the radius of the Earth we can find the altitude above the Earth’s
+          surface. \\
+          \\
+          $
+            d_{altitude}=42306-6400=35906 ~~ km ~~~~ \surd
+          $ 
         }
 
 
