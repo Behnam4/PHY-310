@@ -279,45 +279,45 @@
         \\
         \\
         $
-          r(\phi)=\dfrac{c}{1+ \epsilon ~ cos(\phi)} \Rightarrow r(1+ \epsilon ~ cos(\phi))=1 \\
+          r(\phi)=\dfrac{c}{1+ \epsilon ~ cos(\phi)} \Rightarrow r(1+ \epsilon ~ cos(\phi))=c \\
           \\
           \\
         $
         We know $x=r cos(\phi)$, hence:
         $
-          r(1+ \epsilon ~ \dfrac{x}{r})=1, ~~~ k \equiv r+\epsilon ~ x
+          r(1+ \epsilon ~ \dfrac{x}{r})=c, ~~~ c \equiv r+\epsilon ~ x
         $
         \\
         \\
         $
-          x^2+y^2=r^2=(k- \epsilon x)^2 \\
+          x^2+y^2=r^2=(c- \epsilon x)^2 \\
           \\
-          x^2+y^2=k^2-2k \epsilon x+ \epsilon^2 x^2 \\
+          x^2+y^2=c^2-2c \epsilon x+ \epsilon^2 x^2 \\
           \\
-          x^2+y^2+2k \epsilon x- \epsilon^2 x^2=k^2 \\
+          x^2+y^2+2c \epsilon x- \epsilon^2 x^2=c^2 \\
           \\
-          x^2(1- \epsilon^2)+y^2+2k \epsilon x=k^2 \\
+          x^2(1- \epsilon^2)+y^2+2c \epsilon x=c^2 \\
           \\
-          x^2(1- \epsilon^2)^2+y^2(1- \epsilon^2)+2k \epsilon x(1- \epsilon^2)=k^2(1- \epsilon^2) \\
-          \\
-          \\
-          \left[x(1-\epsilon^2)+ \epsilon k\right]^2-y^2|\epsilon^2-1|=k^2 \\
+          x^2(1- \epsilon^2)^2+y^2(1- \epsilon^2)+2c \epsilon x(1- \epsilon^2)=c^2(1- \epsilon^2) \\
           \\
           \\
-          (1- \epsilon^2)^2 \left[x+\dfrac{\epsilon k}{(1- \epsilon^2)}\right]^2-y^2 |\epsilon^2-1|=k^2 \\
+          \left[x(1-\epsilon^2)+ \epsilon c\right]^2-y^2|\epsilon^2-1|=c^2 \\
+          \\
+          \\
+          (1- \epsilon^2)^2 \left[x+\dfrac{\epsilon c}{(1- \epsilon^2)}\right]^2-y^2 |\epsilon^2-1|=c^2 \\
           \\
           \\
           \\
-          \therefore ~~~~ \left[\dfrac{1-\epsilon^2}{k}\right]^2 \left[\dfrac{\epsilon k}{(1- \epsilon^2)^2}+x\right]^2-y^2 \left[\dfrac{|e^2-1|}{k^2}\right] \\
+          \therefore ~~~~ \left[\dfrac{1-\epsilon^2}{c}\right]^2 \left[\dfrac{\epsilon c}{(1- \epsilon^2)^2}+x\right]^2-y^2 \left[\dfrac{|e^2-1|}{c^2}\right] \\
           \\
           \\
           \\
           \therefore ~~~ \begin{cases}
-            \alpha=\dfrac{k}{1-\epsilon^2} \\
+            \alpha=\dfrac{c}{1-\epsilon^2} \\
             \\
-            \beta=\dfrac{k}{\sqrt{|\epsilon^2-1|}} \\
+            \beta=\dfrac{c}{\sqrt{|\epsilon^2-1|}} \\
             \\
-            \delta=-\dfrac{\epsilon k}{(1- \epsilon^2)}
+            \delta=-\dfrac{\epsilon c}{(1- \epsilon^2)}
           \end{cases}
         $
       }
@@ -328,7 +328,54 @@
     (the reduced mass), and $\ell$ (the angular momentum).
 
     \textcolor{hwColor}{
-      Here
+      $
+        \mathcal{L}(r, \phi, \dot{r}, \dot{\phi})=KE-PE=\dfrac{1}{2} \mu \left(\dot{r}^2+r^2 \dot{\phi}^2\right)-PE \\ 
+        \\
+        \rule{15cm}{1pt}
+        \\
+        \\
+        \dfrac{\partial \mathcal{L}}{\partial \phi}=\dfrac{d}{dt} \left(\mu r^2 \dot{\phi}\right) 
+        \\
+        \\
+        \therefore ~~~ \dot{\phi}=\dfrac{l}{\mu r^2}
+        \\
+        \rule{15cm}{1pt}
+        \\
+        \\
+        \dfrac{\partial \mathcal{L}}{\partial r}=\dfrac{d}{dt} \dfrac{\partial \mathcal{L}}{\partial \dot{r}} \\
+        \\
+        \\
+        \therefore ~~~ \dfrac{l^2}{\mu r^3}+F(r)=\mu \dddot{r}
+        \\
+        \\
+        \rule{15cm}{1pt}
+        \\
+        \\
+        r \equiv \dfrac{1}{\omega}, ~~~~ \dfrac{d}{dt}=\dfrac{d\phi}{dt} \dfrac{d}{d \phi}=\dfrac{l}{\mu r^2} \dfrac{d}{d\phi} \\
+        \\
+        \\
+        \Longrightarrow \dot{r}=\dfrac{l}{\mu r^2} \dfrac{d}{d \phi} \dfrac{1}{\omega}=\dfrac{l \omega^2}{\mu} \dfrac{d}{d \phi} \dfrac{1}{\omega}  \\
+        \\
+        \\
+        \therefore ~~~~ \ddot{r}=-\left(\dfrac{l \omega}{\mu}\right)^2 \dfrac{d^2 \omega}{d \phi^2}
+        \\
+        \\
+        \rule{15cm}{1pt}
+        \\
+        \\
+        \mu \ddot{r}-\dfrac{l^2}{\mu r^3}-F(r)=0 \\
+        \\
+        -l^2 \omega^2 \omega^{''}-l^2 \omega^3+\mu k \omega^5=0 \\
+        \\
+        \therefore ~~~~ \omega^{''}+\omega-\dfrac{\mu k \omega^3}{l^2}=0 \\
+        \\
+        \\
+        \omega=\dfrac{1}{r}=\dfrac{1}{a cos(\phi)} \Longrightarrow \begin{cases}
+          \omega^'=\dfrac{sin(\phi)}{a cos^2(\phi)} \\
+          \\
+          \omega^{''}=\dfrac{1}{a cos(\phi)}+\dfrac{2 sin^2(\phi)}{a cos^3(\phi)}
+        \end{cases}
+      $
     }
 
 
