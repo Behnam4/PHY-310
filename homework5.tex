@@ -57,6 +57,54 @@
     \item \textbf{The Shape of Water}. A round bucket of water is spinning at angular velocity $\omega$ about its axis of symmetry, 
     in the presence of gravity, g. Letting $z_0$ be the height of the water at the center of the bucket, find the height of the water, $z(r)$, as a function of the radius.
 
+      \textcolor{hwColor}{
+        \\
+        Most of the time when we hear a physical problem has symmetry about, for simplicity it's recommened 
+        to use the cylindrical coordinates. We are told that this problem is in the presence of gravity (vertically downward),
+        hence we have the centrifugal force acting in the radial direction. From page 344 of the textbook we have the centrifugal force as:
+        \\
+        \\
+        $
+          F_{cf}=m \left(\Omega \times r\right) \times \Omega
+          \\
+          \\
+          =mr\Omega^2 sin(\pi/2) \hat{\rho}
+          \\
+          \\
+          \therefore ~~~ F_{cf}=mr \Omega^2 \hat{\rho} ~~~~ \surd
+          \\
+          \\
+          F=F_{cf}-mg \hat{z}=mr \Omega^2 \hat{\rho}-mg \hat{z} ~~~ \surd
+        $
+        \\
+        \\
+        Based on the fact that the system is conserved, we have: 
+        \\
+        \\
+        $
+          U=-\left[\bigints \left(mr \Omega^2 \hat{\rho}\right) dr+ \bigints \left(-mg \hat{z}\right) dz\right]
+          \\
+          \\
+          =-\left[\dfrac{1}{2}mr^2 \Omega^2-mgz\right]
+          \\
+          \\
+          \\
+          \therefore ~~~~ U=-\dfrac{1}{2}mr^2 \Omega^2-mgz
+        $
+        \\
+        \\
+        Let's set the potential energy to zero. (since the system is conserved, thus the potential must be a constant) 
+        \\
+        \\
+        $
+          U=0 \Longrightarrow -\dfrac{1}{2}mr^2 \Omega^2-mgz=0
+          \\
+          \\
+          \\
+          z(r)=\dfrac{r^2 \Omega^2}{2g} ~~~ \surd
+        $
+      }
+
     \item \textbf{Black Hole Spaghetti}. You jump feet first into a black hole. For simplicity, assume you have
     a height $h$ and that the mass of your feet and of your head are about the same, $m$. Assuming the Newtonian gravitational formula to hold
     all the way down to the center of the black hole $(r = 0)$, calculate the tidal force on your head and on your feet as a function of the distance $r$
