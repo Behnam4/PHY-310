@@ -1,0 +1,125 @@
+\documentclass[fleqn]{article}
+\oddsidemargin 0.0in
+\textwidth 6.0in
+\thispagestyle{empty}
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{flexisym}
+\usepackage{amssymb}
+\usepackage{bigints} 
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\definecolor{hwColor}{HTML}{AD53BA}
+
+\begin{document}
+
+  \begin{titlepage}
+
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+    \center
+
+
+    \textsc{\LARGE Arizona State University}\\[1.5cm]
+
+    \textsc{\LARGE Classical Parts/Field/Matter I}\\[1.5cm]
+
+
+    \begin{figure}
+      \includegraphics[width=\linewidth]{asu.png}
+    \end{figure}
+
+
+    \HRule \\[0.4cm]
+    { \huge \bfseries Homework Five}\\[0.4cm] 
+    \HRule \\[1.5cm]
+
+    \textbf{Behnam Amiri}
+
+    \bigbreak
+
+    \textbf{Prof: Maulik Parikh}
+
+    \bigbreak
+
+
+    \textbf{{\large \today}\\[2cm]}
+
+    \vfill
+
+  \end{titlepage}
+
+  \begin{enumerate}
+    \item \textbf{The Shape of Water}. A round bucket of water is spinning at angular velocity $\omega$ about its axis of symmetry, 
+    in the presence of gravity, g. Letting $z_0$ be the height of the water at the center of the bucket, find the height of the water, $z(r)$, as a function of the radius.
+
+    \item \textbf{Black Hole Spaghetti}. You jump feet first into a black hole. For simplicity, assume you have
+    a height $h$ and that the mass of your feet and of your head are about the same, $m$. Assuming the Newtonian gravitational formula to hold
+    all the way down to the center of the black hole $(r = 0)$, calculate the tidal force on your head and on your feet as a function of the distance $r$
+    to your center of mass (assumed midway between your head and feet). Suppose your body has a breaking tension $T$. Calculate the difference
+    in tidal force between your head and feet (keeping track of signs) and show that, regardless of $T$, you will be ripped to pieces as you approach
+    the center of the black hole. This process is called spaghettification.
+
+    \item A ball is thrown vertically up to a height h above the surface of the earth at a northern latitude $\lambda$. Ignoring air resistance, show that the
+    ball returns to the ground at a point $\dfrac{4}{3} \omega cos(\lambda \sqrt{8h^3/g})$ to the west, where $\omega$ is the angular velocity of the earth.
+
+
+    \item An unfortunate ant (m = 1 mg) is on top of a tennis ball when the ball is suddenly served. Assume that, as the ball flies over the net,
+    it has an instantaneous velocity of $v=90 ~ kmph$ in the $+\hat{x}$ direction and is slowing down (due to air resistance) at a rate of
+    $5 ~ ms^{-2}$. The ball also has topspin, spinning about the $+\hat{y}$ axis at $3000 ~ rpm$. The spin is decreasing (again because of air resistance) at a rate of
+    $600 ~ rpm$ per second. The panicked ant, which is on top of the ball at the moment it crosses the net, is running in the $-\hat{x}$ direction with an
+    instantaneous velocity of $10 ~ cm ~ s^{-1}$ relative to the ball. Take the radius of the tennis ball to be $3.3 ~ cm$. Calculate the magnitude in Newtons
+    (to one significant figure) and Cartesian direction of each of the forces felt by the poor ant (no need to add up all the forces vectorially). You
+    can ignore the effect of air resistance on the ant itself as well as exotic phenomena like the Magnus effect which causes a spinning ball to dip.
+
+
+    \item A solid cylinder of height $L$ and radius $R$ has uniform mass density $\rho$. Find the moment of inertia tensor about the center of the cylinder. For
+    what value of $L/R$ is the cylinder equally easy to spin about any axis?
+
+
+    \item A pool ball has radius $R$. Find the height, measured from the surface of the pool table, at which the pool ball should be struck with the cue
+    stick so that the ball will roll without slipping.
+
+
+    \item On a spinning spherical planet the free-fall acceleration at the North Pole is $g_0$ while at the equator it is $bg_0$ (where $0\leq b\leq 1$). 
+    Show that, at latitude $\lambda$, the acceleration is given by $g(\lambda)=g_0 \sqrt{sin^2(\lambda)+b^2 cos^2(\lambda)}$.
+
+
+    \item \textbf{Angular Momentum in Different Dimensions}. We are used to thinking of angular momentum as a vector:
+    $\overrightarrow{L}=\overrightarrow{r} \times \overrightarrow{p}$. However, the cross product is only defined in three dimensions. Let us
+    see if we can figure out what kind of geometric object (scalar, vector,
+    matrix, etc) angular momentum really is.
+    \begin{itemize}
+      \item Begin in two dimensions. Write down the Lagrangian for a free
+      particle in polar coordinates and find the conserved quantity due
+      to the fact that $\theta$ is a cyclic (or ignorable) coordinate.
+
+      \item Transforming to Cartesian coordinates, express this angular momentum in terms of Cartesian position
+      $x, y$ and momentum $p_x, p_y$ components.
+
+      \item In three dimensions, write down each of the three components of
+      the angular momentum $\overrightarrow{L}=\overrightarrow{r} \times \overrightarrow{p}$ in terms of Cartesian position
+      $x,y,z$ and momentum $p_x, p_y, p_z$ components.
+
+      \item Looking back at your answer for two and three dimensions, try
+      to find a pattern. For 4 dimensions of space, list the conserved
+      angular momenta in terms of Cartesian position w, x, y, z and momentum $p_{\omega}, p_x, p_y,p_z$ components.
+
+      \item In general, if there are $d$ dimensions of space, how many components of angular momentum are there?
+
+
+      \item The number of components of angular momentum clearly does not match the number of components of a vector in $d$ dimensions
+      (which is just $d$) except when $d=3$. From the number of independent components, what kind of geometric object (i.e. scalar,
+      vector, matrix) is angular momentum?
+      Hint: it’s a kind of $d \times d$ matrix. (Incidentally, the same is true for the magnetic field. Only 
+      in $d=3$ does the magnetic field have the same number of components as a vector. In general, the magnetic field is a matrix.)
+  
+    \end{itemize}
+    
+  \end{enumerate}
+
+\end{document}
