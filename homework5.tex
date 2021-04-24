@@ -143,12 +143,128 @@
     ball returns to the ground at a point $\dfrac{4}{3} \omega cos(\lambda \sqrt{8h^3/g})$ to the west, where $\omega$ is the angular velocity of the earth.
 
       \textcolor{hwColor}{
+        \\
         We are told that the ball is thrown vertically up, so let's use the Cartesian coordinate. \\
         \\
+        $
+          \begin{cases}
+            u=(0,0,v_0)
+            \\
+            v=(\dot{x}, \dot{y}, \dot{z})
+            \\
+            r=(x,y,z)
+            \\
+            \omega=(0, \omega cos(\phi), \omega sin(\phi))
+            \\
+            g=(0, 0, -g_0)
+          \end{cases}
+        $
+        \\
+        \\
+        For this system, we consider two forces:
+        \begin{itemize}
+          \item The force due to gravity
+          \item The Coriolis effect
+        \end{itemize}
+      }
+
+      \textcolor{hwColor}{
+        \\
+        Hence we can have the following:
+        \\
         \\
         $
-          test
+          m \ddot{r}=mg+2m (v \times \omega)
+          \\
+          \\
+          \ddot{r}=g+2 (v \times \omega)
+          \\
+          \\
+          \ddot{r}=g+2 \left[(\dot{x}, \dot{y}, \dot{z}) \times (0, \omega cos(\phi), \omega sin(\phi)) \right]
+          \\
+          \\
+          (\ddot{x}, \ddot{y}, \ddot{z})=(0,0,-g_0)+2(\dot{y} \omega sin(\phi)-\dot{z} \omega cos(\phi), -\dot{x} \omega sin(\phi), \dot{x} \omega cos(\phi))
+          \\
+          \\
+          \\
+          \therefore ~~~~ \begin{cases}
+            \ddot{x}=2 \left[\dot{y} \omega sin(\phi)-\dot{z} \omega cos(\phi)\right]
+            \\
+            \\
+            \ddot{y}=-\dot{x} \omega sin(\phi)
+            \\
+            \\
+            \ddot{z}=-g+\dot{x} \omega cos(\phi)
+          \end{cases}
         $
+        \\
+        \\
+        \\
+        By assuming $\omega=0$ we have: \\
+        \\
+        $
+          \begin{cases}
+            \ddot{x}=0
+            \\
+            \\
+            \ddot{y}=-0
+            \\
+            \\
+            \ddot{z}=-g
+          \end{cases}
+          \\
+          \\
+          \therefore ~~~~ \begin{cases}
+            x=0
+            \\
+            y=0
+            \\
+            z=-\dfrac{1}{2} gt^2+v_0 t
+            \\
+            \dot{x}=0
+            \\
+            \dot{y}=0
+            \\
+            \dot{z}=v_0-gt
+          \end{cases}
+        $
+        \\
+        \\
+        Let's see what we have so far. Based on the above values we can tell that at $z=0$ the factor t is $2\dfrac{v_0}{g}$ and 
+        when $\dot{z}=0$ we must be at the max height ($t=\dfrac{v_0}{g}$). Hence we can conclude:
+        \\
+        \\
+        $
+          \begin{cases}
+            \ddot{x}=-2 \dot{z} \omega cos(\phi)=2(-v_0+gt) \omega cos(\phi)=2(gt-\sqrt{2gh}) \omega cos(\phi)
+            \\
+            \ddot{y}=0
+            \\
+            \ddot{z}=-g
+          \end{cases}
+          \\
+          \\
+          \\
+          \\
+          \therefore ~~~~~ \begin{cases}
+            \dot{x}=2 \left[\dfrac{1}{2} gt^2-\sqrt{2ght}\right] \omega cos(\phi) ~~~~ \surd
+            \\
+            \\
+            \\
+            x=2 \left[\dfrac{1}{6} gt^3-\dfrac{1}{2} \sqrt{2gh}t^2\right]    ~~~~~~~~~~~ \surd
+          \end{cases}
+          \\
+          \\
+          \\
+          \Longrightarrow x=2\omega cos(\phi) \left[\dfrac{4}{3} \dfrac{g v^3_0}{g^3}-2\dfrac{v^2_0 \sqrt{2gh}}{g^2}\right]
+          \\
+          \\
+          \\
+          \therefore ~~~~ x=-\dfrac{4}{3} \omega cos(\phi) \sqrt{\dfrac{8h^3}{g}} ~~~~~ \surd
+        $
+        \\
+        \\
+        Since we have a negative in our result, the ball will fall west. Note that the x direction we choice is East. 
       }
 
     \item An unfortunate ant (m = 1 mg) is on top of a tennis ball when the ball is suddenly served. Assume that, as the ball flies over the net,
