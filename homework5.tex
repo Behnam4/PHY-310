@@ -275,6 +275,87 @@
     (to one significant figure) and Cartesian direction of each of the forces felt by the poor ant (no need to add up all the forces vectorially). You
     can ignore the effect of air resistance on the ant itself as well as exotic phenomena like the Magnus effect which causes a spinning ball to dip.
 
+      \textcolor{hwColor}{
+        As we are mouring for the loss and the dark destiny of the poor ant, we are asked to calculate the magnitude in Newtons 
+        and Cartesian direction of each of the forces felt by him. Hence we have: \\
+        \\
+        \\
+        $
+          \mathcal{X}=\bigints \bigints \bigints\limits_{V}=\bigints\limits_{0}^{2\pi} \rho (y^2+z^2) dV
+          \\
+          \\
+          =\bigints\limits_{0}^{2 \pi} \bigints\limits_{-R/2}^{+R/2} \bigints\limits_{0}^{r} \rho r \left(r^2 sin^2(\phi)+z^2\right) dr dz d\phi
+          \\
+          \\
+          =\rho \bigints\limits_{0}^{2 \pi} \bigints\limits_{-R/2}^{+R/2} \left[\dfrac{1}{4} r^4 sin^2(\phi)+\dfrac{1}{2} r^2 z^2\right] dz d\phi
+          \\
+          \\
+          =\rho \bigints\limits_{0}^{2 \pi} \left[\dfrac{1}{4} Rr^4 sin^2(\phi)+\dfrac{1}{24} r^2 R^3\right] d\phi 
+          \\
+          \\
+          =\dfrac{M}{\pi R r^2} \left(\dfrac{1}{4} R r^4 \pi+\dfrac{1}{12} r^2 R^3 \pi\right)
+          \\
+          \\
+          \\
+          \therefore ~~~~~ \mathcal{X}=\dfrac{1}{4} Mr^2+\dfrac{1}{12} MR^2
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          \mathcal{Y}=\bigints \bigints \bigints\limits_{V}=\bigints\limits_{0}^{2\pi} \rho (x^2+z^2) dV
+          \\
+          \\
+          =\bigints\limits_{0}^{2 \pi} \bigints\limits_{-R/2}^{+R/2} \bigints\limits_{0}^{r} \rho r \left(r^2 cos^2(\phi)+z^2\right) dr dz d\phi
+          \\
+          \\
+          =\rho \bigints\limits_{0}^{2 \pi} \bigints\limits_{-R/2}^{+R/2} \left[\dfrac{1}{4} r^4 cos^2(\phi)+\dfrac{1}{2} r^2 z^2\right] dz d\phi
+          \\
+          \\
+          =\rho \bigints\limits_{0}^{2 \pi} \left[\dfrac{1}{4} Rr^4 cos^2(\phi)+\dfrac{1}{24} r^2 R^3\right] d\phi 
+          \\
+          \\
+          =\dfrac{M}{\pi R r^2} \left(\dfrac{1}{4} R r^4 \pi+\dfrac{1}{12} r^2 R^3 \pi\right)
+          \\
+          \\
+          \\
+          \therefore ~~~~~ \mathcal{Y}=\dfrac{1}{4} Mr^2+\dfrac{1}{12} MR^2
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          \mathcal{Z}=\bigints \bigints \bigints\limits_{V}=\bigints\limits_{0}^{2\pi} \rho (x^2+y^2) dV
+          \\
+          \\
+          =\bigints\limits_{0}^{2 \pi} \bigints\limits_{-R/2}^{+R/2} \bigints\limits_{0}^{r} \rho r \left(r^2 cos^2(\phi)+r^2 sin^2(\phi)\right) dr dz d\phi
+          \\
+          \\
+          =\bigints\limits_{0}^{2 \pi} \bigints\limits_{-R/2}^{+R/2} \bigints\limits_{0}^{r} \rho r^3 dr dz d\phi
+          \\
+          \\
+          =\dfrac{1}{4} \bigints\limits_{0}^{2 \pi} \bigints\limits_{-R/2}^{+R/2} \rho r^4 dr dz d\phi
+          \\
+          \\
+          =\dfrac{1}{2} \pi R r^4 \rho
+          \\
+          \\
+          \\
+          \therefore ~~~~~ \mathcal{Z}=\dfrac{1}{2} M r^2
+        $
+        Hence we have: \\
+        \\
+        \\
+        $\therefore ~~~~~
+          \begin{pmatrix}
+            \dfrac{1}{4} Mr^2+\dfrac{1}{12} MR^2 & 0 & 0
+            \\
+            0 & \dfrac{1}{4} Mr^2+\dfrac{1}{12} MR^2 & 0
+            \\
+            0 & 0 & \dfrac{1}{2} M r^2
+          \end{pmatrix}
+        $
+      }
 
     \item A solid cylinder of height $L$ and radius $R$ has uniform mass density $\rho$. Find the moment of inertia tensor about the center of the cylinder. For
     what value of $L/R$ is the cylinder equally easy to spin about any axis?
