@@ -475,26 +475,121 @@
       particle in polar coordinates and find the conserved quantity due
       to the fact that $\theta$ is a cyclic (or ignorable) coordinate.
 
+        \textcolor{hwColor}{
+          $
+            \ell=T-V=\dfrac{1}{2} mV^2-V=0
+            \\
+            \\
+            =\dfrac{1}{2} M (\dot{r}^2+r^2 \dot{\theta})
+            \\
+            \\
+            \begin{cases}
+              \dfrac{d}{dt} \left(\dfrac{\partial \ell}{\partial \dot{\theta}}\right)=\dfrac{\partial \ell}{\partial \theta}=0
+              \\
+              \\
+              \dfrac{d}{dt} \left(mr^2 \dot{\theta}\right)=0
+            \end{cases}
+          $
+          \\
+          \\
+          Then, $\ell$ is conserved. 
+        }
+
       \item Transforming to Cartesian coordinates, express this angular momentum in terms of Cartesian position
       $x, y$ and momentum $p_x, p_y$ components.
+
+        \textcolor{hwColor}{
+          \\
+          $
+            \overrightarrow{L}=\overrightarrow{r} \times \overrightarrow{p}
+            \\
+            \\
+            \overrightarrow{r}=<x, y, 0>
+            \\
+            \\
+            \overrightarrow{p}=<p_x, p_y, 0>
+            \\
+            \\
+            \\
+            \therefore ~~~~~ \overrightarrow{L}=<0, 0, x p_y-y p_x>
+          $
+        }
 
       \item In three dimensions, write down each of the three components of
       the angular momentum $\overrightarrow{L}=\overrightarrow{r} \times \overrightarrow{p}$ in terms of Cartesian position
       $x,y,z$ and momentum $p_x, p_y, p_z$ components.
 
+        \textcolor{hwColor}{
+          \\
+          $
+            \overrightarrow{L}=\overrightarrow{r} \times \overrightarrow{p}
+            \\
+            \\
+            \overrightarrow{r}=<x, y, z>
+            \\
+            \\
+            \overrightarrow{p}=<p_x, p_y, p_z>
+            \\
+            \\
+            \\
+            \therefore ~~~~~ \overrightarrow{L}=<y p_z-z p_y, z p_x-x p_z, x p_y-y p_x>
+          $
+        }
+
       \item Looking back at your answer for two and three dimensions, try
       to find a pattern. For 4 dimensions of space, list the conserved
       angular momenta in terms of Cartesian position w, x, y, z and momentum $p_{\omega}, p_x, p_y,p_z$ components.
 
+        \textcolor{hwColor}{
+          \\
+          $
+            y p_z-z p_y \omega p_x-x p_{\omega}
+            \\
+            \\
+            z p_x -x p_z \omega p_y - y p_{\omega}
+            \\
+            \\
+            x p_y -y p_z \omega p_z -z p_{\omega}
+          $
+          \\
+        }
+  
       \item In general, if there are $d$ dimensions of space, how many components of angular momentum are there?
 
+        \textcolor{hwColor}{
+          \begin{center}
+            \begin{tabular}{ c|c }
+             d & $L_i(d)$ \\ 
+             \hline
+             0 & 0 \\  
+             1 & 0 \\  
+             2 & 1 \\  
+             3 & 3 \\  
+             4 & 6     
+            \end{tabular}
+          \end{center}
+        }
+
+        \textcolor{hwColor}{
+          \\
+          \\
+          $
+            \therefore ~~~~ \dfrac{d(d-1)}{2} \\ \\
+          $
+        }
 
       \item The number of components of angular momentum clearly does not match the number of components of a vector in $d$ dimensions
       (which is just $d$) except when $d=3$. From the number of independent components, what kind of geometric object (i.e. scalar,
       vector, matrix) is angular momentum?
       Hint: it’s a kind of $d \times d$ matrix. (Incidentally, the same is true for the magnetic field. Only 
       in $d=3$ does the magnetic field have the same number of components as a vector. In general, the magnetic field is a matrix.)
-  
+    
+        \textcolor{hwColor}{
+          \\
+          \\
+          Angular  Momentum  is an anti-symmetric tensor. And we can represent it as a matrix. 
+        }
+
     \end{itemize}
     
   \end{enumerate}
