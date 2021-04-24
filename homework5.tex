@@ -376,9 +376,94 @@
     \item A pool ball has radius $R$. Find the height, measured from the surface of the pool table, at which the pool ball should be struck with the cue
     stick so that the ball will roll without slipping.
 
+      \textcolor{hwColor}{
+        \includegraphics[height=5cm, width=8cm]{Capture.JPG}
+        \\
+        \\
+        For a sphere the moment of inertia is $I=\dfrac{2}{5} m R^2$. The distance from the center of mass
+        is $d=(h-R)\hat{k}$. We have: \\
+        \\
+        $
+          \tau=I \dfrac{a_{cx}}{R}=\dfrac{2}{5} m R^2 \dfrac{a_{cx}}{R}
+          \\
+          \\
+          F_{ext} \hat{i} (h-R) \hat{k}=\dfrac{2}{5} mRa_{cx} 
+          \\
+          \\
+          \\
+          \therefore ~~~~ F_{ext}(h-R)=\dfrac{2}{5} mRa_{cx} 
+        $
+        We are told that the ball roll without slipping, hence 
+        \\
+        \\
+        $
+          F_{ext}-F_{x}=ma_{cx} \Longrightarrow F_{ext}=ma_{cx}
+          \\
+          \\
+          \\
+          \therefore ~~~~~ ma_{cx} (h-R)=\dfrac{2}{5} mRa_{cx} 
+          \\
+          \\
+          h-r=\dfrac{2}{5} r
+          \\
+          \\
+          \\
+          \therefore ~~~~ h=\dfrac{7}{5} r
+        $
+      }
 
     \item On a spinning spherical planet the free-fall acceleration at the North Pole is $g_0$ while at the equator it is $bg_0$ (where $0\leq b\leq 1$). 
     Show that, at latitude $\lambda$, the acceleration is given by $g(\lambda)=g_0 \sqrt{sin^2(\lambda)+b^2 cos^2(\lambda)}$.
+
+
+      \textcolor{hwColor}{
+        We got the free-fall acceleration as:
+        \\
+        \\
+        $
+          g=g_0+(\omega \times r) \times \omega=-g_0 \hat{r}+\omega^2 r sin(\phi) \hat{\rho}
+        $
+        \\
+        \\
+        \begin{itemize}
+          \item $\hat{r}$: Spherical radial vector
+          \item $\hat{\rho}$: Cylindrical radial vector
+        \end{itemize}
+      }
+
+      \textcolor{hwColor}{
+        At the equator we have:
+        \begin{itemize}
+          \item $g=b g_0$
+          \item $g=g_0-r \omega^2$
+        \end{itemize} 
+      }
+
+      \textcolor{hwColor}{
+        Based on what we have so far:
+        \\
+        \\
+        $
+          g=-g_0 \hat{r}+(1-b) g_0 sin(\phi) \hat{\rho}
+          \\
+          \\
+          =-g_0 \left[cos(\phi) \hat{z}+sin(\phi) \hat{\rho}\right]+(1-b) g_0 sin(\phi) \hat{\rho}
+          \\
+          \\
+          =-g_0 cos(\phi) \hat{z}+\left[(1-b) g_0 sin(\phi)-g_0 sin(\phi)\right] \rho
+          \\
+          \\
+          =-g_0 cos(\phi) \hat{z}-b g_0 sin(\phi) \hat{\rho}
+          \\
+          \\
+          \\
+          |g|=\sqrt{\left(-g_0 cos(\phi)\right)^2+\left(b g_0 sin(\phi)\right)^2}
+          \\
+          \\
+          \\
+          \therefore ~~~~ |g|=g_0\sqrt{cos^2(\phi)+b^2 sin^2(\phi)} ~~~~ \surd
+        $
+      }
 
 
     \item \textbf{Angular Momentum in Different Dimensions}. We are used to thinking of angular momentum as a vector:
