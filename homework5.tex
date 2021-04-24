@@ -131,8 +131,22 @@
         $
         \\
         \\
+        We know that the Binomial Theorem states 
+        $$(1+x)^n=1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+...$$
         \\
-        Based on $h<<r$ we have, $F_{feet}-F_{head} \approx 2Gh \dfrac{Mm}{r^3}$. 
+        With the help of the Binomial Theorem and knowing that $h<<r$ we have:
+        \\
+        \\
+        $
+          F_{feet}-F_{head}=G \dfrac{Mm}{r^2} \left[\left(1-\dfrac{h}{2r}\right)^{-2}-\left(1+\dfrac{h}{2r}\right)^{-2}\right]
+          \\
+          \\
+          =G \dfrac{Mm}{r^2} \left[\left(1+\dfrac{2h}{2r}\right)-\left(1-\dfrac{2h}{2r}\right)\right]
+          \\
+          \\
+          \\
+          \therefore ~~~~~ F_{feet}-F_{head} \approx 2Gh \dfrac{Mm}{r^3}
+        $
         \\
         \\
         Regardless of $T$, you will be ripped to pieces as you approach the center of the black hole because
@@ -276,12 +290,42 @@
     can ignore the effect of air resistance on the ant itself as well as exotic phenomena like the Magnus effect which causes a spinning ball to dip.
 
       \textcolor{hwColor}{
-        As we are mouring for the loss and the dark destiny of the poor ant, we are asked to calculate the magnitude in Newtons 
-        and Cartesian direction of each of the forces felt by him. Hence we have: \\
+        As we are mouring for the loss and the dark destiny of the poor ant, we are asked to 
+        calculate the magnitude in Newtons and Cartesian direction of each of the forces felt 
+        by him. \\
         \\
-        \\
+        The three types of forces on the ant are Centrifugal, Coriolis, and Euler. 
+        \begin{itemize}
+          \item $F_{cor}=-2m \left(\omega \times v\right)$
+          \item $F_{cen}=-m \times \omega^2 r$
+          \item $F_{eul}=-m \dfrac{d \omega}{dt} \times r$
+        \end{itemize}
+      }
+
+      \textcolor{hwColor}{
         $
-          hello
+          F_{cor}=-2 \left(10 ^{-6} ~ kg\right) \left(314.16 ~ rad/s \hat{y} \times 10^{-1} ~ m \hat{x}\right)
+          \\
+          \\
+          \therefore ~~~~~ F_{cor}=6.28 \times 10^{-6} ~ N (-\hat{z})
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          F_{cen}=- \left(10^{-6} ~ kg\right) \left(314.16 ~ rad/s \hat{y}\right) \left[314.16 ~ rad/s \hat{y} \times \left(3.3 \times 10^{-2} ~ m \hat{z}\right)\right]
+          \\
+          \\
+          \therefore ~~~~~ F_{cen}=3.26 \times 10^{-3} N \hat{z}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          F_{eul}=-\left(10^{-6} ~ kg\right) \left(-62.8 ~ rad/s \hat{y} \right) \left(3300 ~ m \hat{z}\right)
+          \\
+          \\
+          \therefore ~~~~~ F_{eul}=2.07 \times 10^{-6} ~ N \hat{x}
         $
       }
 
@@ -480,7 +524,7 @@
             \ell=T-V=\dfrac{1}{2} mV^2-V=0
             \\
             \\
-            =\dfrac{1}{2} M (\dot{r}^2+r^2 \dot{\theta})
+            =\dfrac{1}{2} M (\dot{r}^2+r^2 \dot{\theta}^2)
             \\
             \\
             \begin{cases}
