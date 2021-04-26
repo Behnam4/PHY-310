@@ -105,6 +105,8 @@
         $
       }
 
+    \pagebreak
+
     \item \textbf{Black Hole Spaghetti}. You jump feet first into a black hole. For simplicity, assume you have
     a height $h$ and that the mass of your feet and of your head are about the same, $m$. Assuming the Newtonian gravitational formula to hold
     all the way down to the center of the black hole $(r = 0)$, calculate the tidal force on your head and on your feet as a function of the distance $r$
@@ -113,44 +115,53 @@
     the center of the black hole. This process is called spaghettification.
 
       \textcolor{hwColor}{
+        INSERT PIC HERE
+        \\
+        \\
+        We know that we have a body traveling near the black hole. Since we have a very strong gravitational force the
+        body will have experience more gravitational force towards the feet. Let's suppose $F_h$ is the force on the head 
+        and $F_f$ is the force on the feet. so we have: \\
+        \\ 
         $
-          M_{feet}=M_{head}=m \\
-          \\
-          \begin{cases}
-            F_{feet}=G \dfrac{M m}{(r-\dfrac{h}{2})^2}
-            \\
-            F_{head}=G \dfrac{M m}{(r+\dfrac{h}{2})^2}
-          \end{cases}
-          \\
-          \\
-          F_{feet}-F_{head}=G \dfrac{M m}{(r-\dfrac{h}{2})^2}-G \dfrac{M m}{(r+\dfrac{h}{2})^2}
+          F=F_f \left(-\hat{r}\right)-F_h \left(-\hat{r}\right)
           \\
           \\
           \\
-          =G \dfrac{M m}{r^2(1-\dfrac{h}{2r})^2}-G \dfrac{M m}{r^2(1+\dfrac{h}{2r})^2}
+          =\left[G\dfrac{Mm}{(r+d)^2}-G\dfrac{Mm}{(r-d)^2}\right] \hat{r}
+          \\
+          \\
+          \\
+          =GMm \left(\dfrac{(r-d)^2-(r+d)^2}{(r-d)^2(r+d)^2}\right) \hat{r}
+          \\
+          \\
+          \\
+          =GMm \left(\dfrac{-2hr}{(r^2-d^2)^2}\right) \hat{r}, since ~~~ r>>>d
+          \\
+          \\
+          \\
+          =2G\dfrac{Mmh}{r^3} \left(-\hat{r}\right) 
+        $ 
+        \\
+        \\
+        Let's have $T$ as the breaking force of the body. When the below statement holds the body
+        would be destroyed.
+        \\
+        \\
+        $
+          T_0< 2G\dfrac{Mmh}{r^3}
         $
         \\
         \\
-        We know that the Binomial Theorem states 
-        $$(1+x)^n=1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+...$$
+        As $r$ goes to zero, the tidal force of the body goes to infinity, therefore the body can not tolerate it.
         \\
-        With the help of the Binomial Theorem and knowing that $h<<r$ we have:
         \\
         \\
         $
-          F_{feet}-F_{head}=G \dfrac{Mm}{r^2} \left[\left(1-\dfrac{h}{2r}\right)^{-2}-\left(1+\dfrac{h}{2r}\right)^{-2}\right]
-          \\
-          \\
-          =G \dfrac{Mm}{r^2} \left[\left(1+\dfrac{2h}{2r}\right)-\left(1-\dfrac{2h}{2r}\right)\right]
-          \\
-          \\
-          \\
-          \therefore ~~~~~ F_{feet}-F_{head} \approx 2Gh \dfrac{Mm}{r^3}
+          \therefore ~~~~~ r=\sqrt[3]{\dfrac{T_0}{2GMmh}} ~~~~ \surd
         $
         \\
         \\
-        Regardless of $T$, you will be ripped to pieces as you approach the center of the black hole because
-        as $r \to 0$, then $F_{tidal} \to \infty$ and because $T$ is constant.
+        This last formula shows that the body starts to break apart at a distance of $r$.
       }
 
     \item A ball is thrown vertically up to a height h above the surface of the earth at a northern latitude $\lambda$. Ignoring air resistance, show that the
