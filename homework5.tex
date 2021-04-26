@@ -101,7 +101,7 @@
           \\
           \\
           \\
-          z(r)=\dfrac{r^2 \Omega^2}{2g} ~~~ \surd
+          z(r)=\dfrac{r^2 \Omega^2}{2g}+z_0 ~~~ \surd
         $
       }
 
@@ -115,7 +115,6 @@
     the center of the black hole. This process is called spaghettification.
 
       \textcolor{hwColor}{
-        INSERT PIC HERE
         \\
         \\
         We know that we have a body traveling near the black hole. Since we have a very strong gravitational force the
@@ -163,6 +162,8 @@
         \\
         This last formula shows that the body starts to break apart at a distance of $r$.
       }
+
+    \pagebreak
 
     \item A ball is thrown vertically up to a height h above the surface of the earth at a northern latitude $\lambda$. Ignoring air resistance, show that the
     ball returns to the ground at a point $\dfrac{4}{3} \omega cos(\lambda \sqrt{8h^3/g})$ to the west, where $\omega$ is the angular velocity of the earth.
@@ -292,6 +293,8 @@
         Since we have a negative in our result, the ball will fall west. Note that the x direction we choice is East. 
       }
 
+    \pagebreak
+
     \item An unfortunate ant (m = 1 mg) is on top of a tennis ball when the ball is suddenly served. Assume that, as the ball flies over the net,
     it has an instantaneous velocity of $v=90 ~ kmph$ in the $+\hat{x}$ direction and is slowing down (due to air resistance) at a rate of
     $5 ~ ms^{-2}$. The ball also has topspin, spinning about the $+\hat{y}$ axis at $3000 ~ rpm$. The spin is decreasing (again because of air resistance) at a rate of
@@ -383,6 +386,8 @@
         $
       }
 
+    \pagebreak
+
     \item A solid cylinder of height $L$ and radius $R$ has uniform mass density $\rho$. Find the moment of inertia tensor about the center of the cylinder. For
     what value of $L/R$ is the cylinder equally easy to spin about any axis?
 
@@ -471,6 +476,8 @@
         $
       }
 
+    \pagebreak
+
     \item A pool ball has radius $R$. Find the height, measured from the surface of the pool table, at which the pool ball should be struck with the cue
     stick so that the ball will roll without slipping.
 
@@ -510,9 +517,10 @@
         $
       }
 
+    \pagebreak
+
     \item On a spinning spherical planet the free-fall acceleration at the North Pole is $g_0$ while at the equator it is $bg_0$ (where $0\leq b\leq 1$). 
     Show that, at latitude $\lambda$, the acceleration is given by $g(\lambda)=g_0 \sqrt{sin^2(\lambda)+b^2 cos^2(\lambda)}$.
-
 
       \textcolor{hwColor}{
         We got the free-fall acceleration as:
@@ -563,6 +571,7 @@
         $
       }
 
+    \pagebreak
 
     \item \textbf{Angular Momentum in Different Dimensions}. We are used to thinking of angular momentum as a vector:
     $\overrightarrow{L}=\overrightarrow{r} \times \overrightarrow{p}$. However, the cross product is only defined in three dimensions. Let us
@@ -574,14 +583,44 @@
       to the fact that $\theta$ is a cyclic (or ignorable) coordinate.
 
         \textcolor{hwColor}{
-          Behnam was here
+          $
+            L(r, \dot{r}, \dot{\phi})=\dfrac{1}{2} m (\dot{r}^2+r^2 \dot{\phi}^2)
+            \\
+            \\
+            \dfrac{d}{dt} mr^2 \dot{\phi}=0 
+            \\
+            \\
+            \therefore ~~~~ mr^2 \dot{\phi}=Constant
+            \\
+            \\
+            \ddot{r}=r \dot{\phi}^2
+          $
+          \\
+          \\
+          We just showed that angular momentum is conserved.
         }
 
       \item Transforming to Cartesian coordinates, express this angular momentum in terms of Cartesian position
       $x, y$ and momentum $p_x, p_y$ components.
 
         \textcolor{hwColor}{
-          Behnam was here
+          $
+            L(\dot{x}, \dot{y})=\dfrac{1}{2}m (\dot{x}^2+\dot{y}^2)
+            \\
+            \\
+            \begin{cases}
+              \dfrac{d}{dt}m \dot{x}=0 \Longrightarrow p_x=Constant
+              \\
+              \\
+              \dfrac{d}{dt}m \dot{y}=0 \Longrightarrow p_y=Constant
+            \end{cases}
+            \\
+            \\
+            \therefore ~~~~ p=p_x \hat{i}+p_y \hat{j} ~ and ~ r=x \hat{i}+y \hat{j}
+            \\
+            \\
+            \therefore ~~~~ L=r \times p=\left(x p_y-yp_x\right) \hat{k} ~~~ \surd
+          $
         }
 
       \item In three dimensions, write down each of the three components of
@@ -589,7 +628,33 @@
       $x,y,z$ and momentum $p_x, p_y, p_z$ components.
 
         \textcolor{hwColor}{
-          Behnam was here
+          $
+            L(\dot{x}, \dot{y}, \dot{z})=\dfrac{1}{2}m (\dot{x}^2+\dot{y}^2+\dot{z}^2)
+            \\
+            \\
+            \begin{cases}
+              \dfrac{d}{dt}m \dot{x}=0 \Longrightarrow p_x=Constant
+              \\
+              \\
+              \dfrac{d}{dt}m \dot{y}=0 \Longrightarrow p_y=Constant
+              \\
+              \\
+              \dfrac{d}{dt}m \dot{z}=0 \Longrightarrow p_z=Constant
+            \end{cases}
+            \\
+            \\
+            \\
+            \begin{cases}
+              p=p_x \hat{i}+p_y \hat{j}+p_z \hat{k}
+              \\
+              \\
+              r=x \hat{i}+y \hat{j}+z \hat{k}
+            \end{cases}
+            \\
+            \\
+            \\
+            \therefore ~~~~ L=r \times p=\left(p_y z-p_z y\right) \hat{i}+\left(z p_x-x p_z\right) \hat{j}+\left(x p_y-y p_x\right) \hat{k}
+          $
         }
 
       \item Looking back at your answer for two and three dimensions, try
@@ -597,13 +662,75 @@
       angular momenta in terms of Cartesian position w, x, y, z and momentum $p_{\omega}, p_x, p_y,p_z$ components.
 
         \textcolor{hwColor}{
-          Behnam was here
+          $
+          L(\dot{x}, \dot{y}, \dot{z}, \dot{w})=\dfrac{1}{2}m (\dot{x}^2+\dot{y}^2+\dot{z}^2+\dot{w}^2)
+          \\
+          \\
+          \begin{cases}
+            \dfrac{d}{dt}m \dot{x}=0 \Longrightarrow p_x=Constant
+            \\
+            \\
+            \dfrac{d}{dt}m \dot{y}=0 \Longrightarrow p_y=Constant
+            \\
+            \\
+            \dfrac{d}{dt}m \dot{z}=0 \Longrightarrow p_z=Constant
+            \\
+            \\
+            \dfrac{d}{dt}m \dot{w}=0 \Longrightarrow p_w=Constant
+          \end{cases}
+          $
+          \\
+          \\
+          The angular momentum can be written as an asymmetric matrix. 
+          \\
+          \\
+          $
+            L_4=\begin{pmatrix}
+              L_{xx} & L_{xy} & L_{xz} & L_{xw} 
+              \\
+              L_{yx} & L_{yy} & L_{yz} & L_{yw}
+              \\
+              L_{zx} & L_{zy} & L_{zz} & L_{zw}
+              \\
+              L_{wx} & L_{wy} & L_{wz} & L_{ww}
+            \end{pmatrix}
+            \\
+            \\
+            \\
+            \\
+            =\begin{pmatrix}
+              0 & xp_y-yp_x & xp_z-zp_x &  xp_w-wp_x
+              \\
+              yp_x-xp_y & 0 & yp_z-zp_y & yp_w-wp_y 
+              \\
+              zp_x-xp_z & zp_y-yp_z & 0 & zp_w-wp_z
+              \\
+              wp_x-xp_w & wp_y-yp_w & wp_z-zp_w & 0
+            \end{pmatrix}
+            \\
+            \\
+            \\
+          $
+          We see there are 6 independent components to angular momentum.
         }
   
       \item In general, if there are $d$ dimensions of space, how many components of angular momentum are there?
 
         \textcolor{hwColor}{
-          Behnam was here
+          \begin{itemize}
+            \item For 0 and 1 dimension of space, we have zero components.
+            \item For 2 dimensions, we have one component.
+            \item For three dimensions, we have 3 components.
+            \item For four dimensions, we have 6 components.
+          \end{itemize}
+        }
+
+        \textcolor{hwColor}{
+          Based on our observation, the pattern we can see is as the following:
+          \\
+          \\
+          \\
+          Number of components$=\dfrac{1}{2}\left(d^2-d\right)$.
         }
 
       \item The number of components of angular momentum clearly does not match the number of components of a vector in $d$ dimensions
@@ -613,7 +740,36 @@
       in $d=3$ does the magnetic field have the same number of components as a vector. In general, the magnetic field is a matrix.)
     
         \textcolor{hwColor}{
-          Behnam was here 
+          \\
+          \\
+          Angular momentum is an anti-symmetric tensor. For 3-D the angular momentum tensor looks like:
+          $
+            L_3=\begin{pmatrix}
+              0 & xp_y-yp_x & xp_z-zp_x
+              \\
+              yp_x-xp_y & 0 & yp_z-zp_y 
+              \\
+              zp_x-xp_z & zp_y-yp_z & 0
+            \end{pmatrix}
+          $ 
+          \\
+          \\
+          \\
+          For 2-D we have: \\
+          \\
+          \\
+          $
+            L_2=\begin{pmatrix}
+              0 & xp_y-yp_x
+              \\
+              yp_x-xp_y & 0 
+            \end{pmatrix}
+          $
+          \\
+          \\
+          For which we only have one component that is independent, implying that this may not even be a vector in
+          the z direction, but actually a scalar that tells us the magnitude of the angular momentum and the sign 
+          tells us which direction its acting (clockwise/counterclockwise) in.
         }
 
     \end{itemize}
